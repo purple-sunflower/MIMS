@@ -2,15 +2,15 @@
 
 import './App.css';
 import { useEffect, useState } from 'react';
+import Header from "./componenent/header"
+import MusicList from "./componenent/musicList"
 
 function App() {
 
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <p>{`count: ${count}`}</p>
-      <button onClick={ ()=> setCount(count+2)}>+</button>
+      <Header/>
+      <MusicList/>
     </div>
   );
 }
