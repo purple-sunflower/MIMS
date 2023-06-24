@@ -6,7 +6,6 @@ import Header from "./componenent/header"
 import MusicList from "./componenent/musicList"
 
 function App() {
-
   return (
     <div className="App">
       <Header/>
