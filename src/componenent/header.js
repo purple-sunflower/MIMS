@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 import { Component } from 'react'
 import '../css/header.css'
@@ -22,7 +23,10 @@ function Header(){
             </div>
             <div id='search-area' className='box'>
                 <FontAwesomeIcon icon={faSearch} id="searchIcon"/>
-                <input id='searchInput'></input>
+                <input id='searchInput' placeholder="검색어를 입력하세요."/>
+            </div>
+            <div id="user-area" className='box'>
+                <FontAwesomeIcon icon={faUser} id="userIcon"/>
             </div>
         </div>
     );
