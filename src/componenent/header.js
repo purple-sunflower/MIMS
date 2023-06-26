@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
-import { Component } from 'react'
+import React from 'react'
 import '../css/header.css'
 import Logo from "../images/logo.png" // 이미지 삽입을 위한 import
 

@@ -1,12 +1,15 @@
-import { Component } from 'react'
+import React from 'react';
 import '../css/musicList.css'
+import MusicBox from './musicBox.js'
 
-function Header(){
+function musicList(){
     return(
         <div id='musicList-wrap'>
-        노래 리스트 입니다.
+            <MusicBox title="Broken Melodies" 
+                    name="NCT DREAM" 
+                    genre="K-POP"/>
         </div>
     );
 }
 
-export default Header;
+export default musicList;

@@ -62,12 +62,13 @@
 #searchIcon{
     width: 15px;
     height: 15px;
+    padding: 0 15px;
 }
 
 #searchInput{
     width: 350px;
     height: 25px;
-    margin-left: -40px;
+    /* margin-left: -40px; */
     font-size: 15px;
 }
 

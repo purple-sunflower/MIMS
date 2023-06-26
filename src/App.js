@@ -2,8 +2,8 @@
 
 import './App.css';
 import { useEffect, useState } from 'react';
-import Header from "./componenent/header"
-import MusicList from "./componenent/musicList"
+import Header from "./componenent/header.js"
+import MusicList from "./componenent/musicList.js"
 
 function App() {
   return (
