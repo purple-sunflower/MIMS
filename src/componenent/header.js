@@ -20,6 +20,7 @@ function Header(){
             <div id='btn-group' className='box'>
                 <button className='btn' id='home' onClick={clickBtn}>홈</button>
                 <button className='btn' id='myList' onClick={clickBtn}>내 보관함</button>
+                <button className='btn' id='all' onClick={clickBtn}>전체보기</button>
             </div>
             <div id='search-area' className='box'>
                 <FontAwesomeIcon icon={faSearch} id="searchIcon"/>

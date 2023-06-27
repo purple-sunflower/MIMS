@@ -4,7 +4,10 @@
 }
 
 #musicBox-wrap{
-    width: 200px;
+    width: 250px;
     height: 200px;
     background-color: green;
+    float: left;
+
+    margin-right: 50px; /*간격 조정*/
 }
