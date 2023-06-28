@@ -10,7 +10,7 @@
 
 h1 {
     font-size: 25px;
-    width: fit-content;
+    width: 100%;
     background-color: red;
     margin-bottom: 20px;
 }

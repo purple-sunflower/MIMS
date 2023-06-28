@@ -1,0 +1,9 @@
+*{
+    margin: 0 auto;
+  }
+  
+  .home {
+    width: 1330px;
+    height: 3000px;
+    background-color: lightblue;
+  }

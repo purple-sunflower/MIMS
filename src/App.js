@@ -1,16 +1,20 @@
 // reacthook + function component 사용
 
-import './App.css';
-import { useEffect, useState } from 'react';
-import Header from "./componenent/header.js"
-import MusicList from "./componenent/musicList.js"
+import React from 'react';
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import Home from "./component/home";
+import AllMusic from "./component/allMusic";
+import MyMusic from "./component/myMusic";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <MusicList/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/allMusic" element={<AllMusic/>}/>
+        <Route path="/myMusic" element={<MyMusic/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

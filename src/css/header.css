@@ -1,6 +1,9 @@
 *{
     font-size: 15px;
     font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
 }
 
 #header-wrap{
