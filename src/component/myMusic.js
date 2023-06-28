@@ -5,7 +5,7 @@ function myMusic() {
     return(
         <div id='myMusic-wrap'>
             <Header/>
-            
+            내 보관함 입니다.
         </div>
     );
 }
