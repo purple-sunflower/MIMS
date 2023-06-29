@@ -16,22 +16,22 @@ function musicList(){
     return(
         <div id='musicList-wrap'>
             <h1>상큼한 K-POP, 들어 볼래?</h1>
-            <MusicBox imgSrc = {<img src={Kistch}/>} // 되긴 하지만... 더 좋은 방법은?
+            <MusicBox imgSrc = {<img className='img' src={Kistch}/>} // 되긴 하지만... 더 좋은 방법은?
                     title="Kitsch" 
                     name="IVE" 
                     genre="K-POP"/>
             <Link to="/playMusic">
-                <MusicBox imgSrc = {<img src={Spicy}/>} 
+                <MusicBox imgSrc = {<img className='img' src={Spicy}/>} 
                         title="Spicy" 
                         name="AESPA" 
                         genre="K-POP"/>
             </Link> 
             {/* 230629 링크 연결 방법이 이것 뿐...? 데이터에 맞게 재생 화면을 구현해야함! */}
-            <MusicBox imgSrc = {<img src={HelloFuture}/>} 
+            <MusicBox imgSrc = {<img className='img' src={HelloFuture}/>} 
                     title="Hello Future" 
                     name="NCT DREAM" 
                     genre="K-POP"/>
-            <MusicBox imgSrc = {<img src={HypeBoy}/>} 
+            <MusicBox imgSrc = {<img className='img' src={HypeBoy}/>} 
                     title="Hype boy" 
                     name="New Jeans" 
                     genre="K-POP"/>
