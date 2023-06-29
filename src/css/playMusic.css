@@ -1,0 +1,40 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#playMusic-wrap{
+    width: 100%;
+    height: 1000px;
+    background-color: lightseagreen;
+}
+
+#playContents{
+    width: 500px;
+    height: 560px;
+    float: left;
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+.content {
+    display: block;
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnCollection{
+    height: 60px;
+    background-color: lightgray;
+}
