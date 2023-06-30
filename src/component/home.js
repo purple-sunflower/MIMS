@@ -10,6 +10,7 @@ function Home() {
       <Header/>
       <MusicList/>
       <MusicList/>
+      <MusicList/>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import '../css/myMusic.css'
 import Header from './header';
 
-function myMusic() {
+function MyMusic() {
     return(
         <div id='myMusic-wrap'>
             <Header/>
@@ -10,4 +10,4 @@ function myMusic() {
     );
 }
 
-export default myMusic;
+export default MyMusic;

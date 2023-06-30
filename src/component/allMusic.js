@@ -2,9 +2,8 @@ import React from 'react';
 import '../css/allMusic.css'
 import Header from './header';
 import MusicList from './musicList';
-import MusicBox from './musicBox';
 
-function allMusic(){
+function AllMusic(){
     return(
         <div id='allMusic-wrap'>
          <Header/>
@@ -14,4 +13,4 @@ function allMusic(){
     );
 }
 
-export default allMusic;
+export default AllMusic;

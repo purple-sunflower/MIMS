@@ -12,7 +12,7 @@ import HypeBoy from '../images/albumCover/hype_boy.jpg'
 // mySQL로 저장하고 끌어오는 것이 필요함을 또 느낌!
 
 
-function musicList(){
+function MusicList(){
     return(
         <div id='musicList-wrap'>
             <h1>상큼한 K-POP, 들어 볼래?</h1>
@@ -39,4 +39,4 @@ function musicList(){
     );
 }
 
-export default musicList;
+export default MusicList;

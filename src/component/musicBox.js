@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/musicBox.css'
 
-function musicBox(props){
+function MusicBox(props){
     return(
         <div id='musicBox-wrap'>
          {props.imgSrc} <br/>
@@ -12,4 +12,4 @@ function musicBox(props){
     );
 }
 
-export default musicBox;
+export default MusicBox;
