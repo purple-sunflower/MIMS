@@ -1,4 +1,4 @@
-// 재생목록
+// 재생목록 컨텐츠 하나
 
 import "../css/playlistContent.css"
 import Kistch from '../images/albumCover/kitsch.jpg' // 임시사진

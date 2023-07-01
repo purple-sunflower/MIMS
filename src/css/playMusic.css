@@ -5,7 +5,7 @@
 
 #playMusic-wrap{
     width: 100%;
-    height: 1000px;
+    height: 680px;
     background-color: lightseagreen;
 }
 
@@ -44,7 +44,7 @@ img{
     /* 아이템들의 사이와 양 끝에 균일한 간격 */
 }
 
-#lyricArea{
+#lyricAndPlaylistArea{
     width: 500px;
     height: 560px;
     background-color: olive;
@@ -57,12 +57,23 @@ img{
     overflow: auto;
 }
 
-#playlistArea{
-    width: 330px;
-    height: 560px;
-    background-color: lightcoral;
+#lyricPlaylistBtn{
+    width: 445px;
+    height: 50px;
+    background-color: goldenrod;
+    padding: 0 17px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
 
+#lyricPlaylistBtn>ul>li{
+    width: 205px;
+    height: 40px;
+    background-color: magenta;
     float: left;
+    text-align: center; /* 글씨 중앙정렬 */
+}
 
-    overflow: auto;
+#lyricBtn{
+    border-bottom: 1px solid black;
 }

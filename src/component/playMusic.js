@@ -9,6 +9,9 @@ import Header from './header';
 import Spicy from '../images/albumCover/spicy.jpg'
 import { useState } from "react";
 import PlaylistContent from "./playlistContent";
+import { Link } from "react-router-dom";
+import MusicLyric from "./musicLyric";
+import MusicPlaylist from "./musicPlaylist";
 
 function PlayMusic() {
 
@@ -17,9 +20,26 @@ function PlayMusic() {
     } // 버튼 작동 확인   
 
     const [isPlay, setPlay] = useState(true);
-    const toggleBtn = () => {
+    const togglePlayBtn = () => {
         setPlay(!isPlay); // playBtn
     }
+
+    const clickLyricBtn = () => { // "가사" 버튼 클릭 시 > 재생목록 항목 안보이게
+        document.getElementById('playlistArea').style = "display:none";
+        document.getElementById('lyricArea').style = "display:block";
+        document.getElementById('lyricBtn').style = "border-bottom: 1px solid black";
+        document.getElementById('playlistBtn').style = "border-bottom: none";
+    }
+
+    const clickPlaylistBtn = () => { // "재생목록" 버튼 클릭 시 > 가사 항목 안보이게
+        document.getElementById('lyricArea').style = "display:none";
+        document.getElementById('playlistArea').style = "display:block";
+        document.getElementById('playlistBtn').style = "border-bottom: 1px solid black";
+        document.getElementById('lyricBtn').style = "border-bottom: none";
+    }
+
+    // 230701 토글 방식으로 가능하지 않을까..? 좀 더 나은 메서드 생각해봐!
+    // hasclass인가 있는데... 
 
     return(
         <div id='playMusic-wrap'>
@@ -31,93 +51,28 @@ function PlayMusic() {
                 <span className="content" id="playBar">0:58 ───♡───────── 3:47</span>
                 <span className="content" id='btnCollection'>
                     <FontAwesomeIcon icon ={faBackward} onClick={clickBtn}/>
-                    <div onClick={toggleBtn}>
+                    <div onClick={togglePlayBtn}>
                         {isPlay ? <FontAwesomeIcon icon ={faPlay}/> : <FontAwesomeIcon icon ={faPause}/>}
                     </div>
                     <FontAwesomeIcon icon ={faForward} onClick={clickBtn}/>
                 </span>
             </div>
-            <div id="lyricArea">
-            Uh-oh <br/>
-            Too spicy <br/>
-            <br/>
-            You want my A to the Z, but you won't, 어림없지<br/>
-            맞혀봐 sweet, 또는 freak, what's hiding underneath? (I see)<br/>
-            망설이듯 간 보는 너, 기회는 없어, oh<br/>
-            No, you won't get it, no, no, you won't get it (I say, hey)<br/>
-            <br/>
-            깜빡 한순간 끌어당겨, you'll be mine (mine)<br/>
-            살짝 다가와, can cross my borderline (hey, line, line, line)<br/>
-            널 따분하게 했던 everyday (day), 흥미로운 덫을 던져줄게 (게)<br/>
-            뛰어들어 봐 just right now<br/>
-            <br/>
-            'Cause I'm too spicy for your heart (ring the fire alarm)<br/>
-            심장을 파고들어 넌 (I'm too spicy)<br/>
-            번지는 자극 속에 넌 (바로 그 순간)<br/>
-            또 다른 나를 발견해 (I'm too spicy, too, too, I'm too spicy)<br/>
-            <br/>
-            Don't stop, 겁내지 마 (hey), 뱅뱅, 외쳐봐<br/>
-            I'm too spicy, yeah, I'm too spicy (you know that I)<br/>
-            Don't stop, 용기 내 봐 (hey), next step, myself<br/>
-            I'm too spicy (too spicy, too, too, I'm too spicy)<br/>
-            <br/>
-            Tell me what you see (see) when you look at me (me)<br/>
-            'Cause I am a ten out of ten, honestly<br/>
-            기세가 다른 move (move), 널 압도하는 groove (groove)<br/>
-            But you keep wasting your time, dudе<br/>
-            Don't chase me, 경고해 난, erase mе, 멀리 달아나<br/>
-            Hey, 이젠 알겠니? 원래부터 bad, I'm so bad, honestly (so bad, hey)<br/>
-            <br/>
-            전부 가질래, 지금부턴, call you mine (mine)<br/>
-            도망칠 거면, don't cross my borderline (hey, line, line, line)<br/>
-            늘 뻔하기만 했던 everyday (day), 이제 그만 rule을 벗어날 때 (때)<br/>
-            어렵지 않아 just right now
-            <br/>
-            'Cause I'm too spicy for your heart (ring the fire alarm)<br/>
-            심장을 파고들어 넌 (I'm too spicy)<br/>
-            번지는 자극 속에 넌 (바로 그 순간)<br/>
-            또 다른 나를 발견해 (I'm too spicy, too, too, I'm too spicy, ready? Uh)<br/>
-            <br/>
-            좀 더 강도를 높여 다음, 다음, 다음<br/>
-            Ayy, ayy, ayy, one of a kind (ooh-whoo)<br/>
-            우린 한계를 앞서, wow, wow, wow<br/>
-            That's right (oh, oh, oh, oh, oh)<br/>
-            <br/>
-            'Cause I'm too spicy for your heart (ring the fire alarm)<br/>
-            새로운 도전 끝에 넌 (ooh-ooh, I'm too spicy)<br/>
-            변화할 시간이야 넌 (지금 이 순간, so hot)<br/>
-            또 다른 나를 찾아내 (I'm too spicy, too, too, I'm too spicy)<br/>
-            <br/>
-            Don't stop, 겁내지 마 (hey), 뱅뱅, 외쳐봐<br/>
-            I'm too spicy, yeah, I'm too spicy (you know that I)<br/>
-            Don't stop, 용기 내 봐 (hey), next step, myself<br/>
-            I'm too spicy, I'm too spicy (too spicy, too, too, I'm too spicy)<br/>
-            <br/>
-            'Cause I (oh, yeah, yeah, yeah)<br/>
-            Yeah, I'm too spicy for your heart, yeah, I'm too spicy for your heart<br/>
-            마침내 번져오는 joy (enjoy-joy-joy-joy)<br/>
-            Yeah, I'm too spicy for your heart<br/>
-            I'm too spicy, too, too, I'm too spicy<br/>
-            For you
-            </div>
-            <div id="playlistArea">
-                재생목록들
-                <PlaylistContent title="Kistch" name="IVE" time="3:50"/>
-                <PlaylistContent title="Queen card" name="G-IDLE" time="2:50"/>
-                <PlaylistContent title="Hello Future" name="NCT DREAM" time="3:17"/>
-                <PlaylistContent title="Smiley" name="Yena" time="3:24"/>
-                <PlaylistContent title="Kistch" name="IVE" time="3:50"/>
-                <PlaylistContent title="Queen card" name="G-IDLE" time="2:50"/>
-                <PlaylistContent title="Hello Future" name="NCT DREAM" time="3:17"/>
-                <PlaylistContent title="Smiley" name="Yena" time="3:24"/>
-                <PlaylistContent title="Kistch" name="IVE" time="3:50"/>
-                <PlaylistContent title="Queen card" name="G-IDLE" time="2:50"/>
-                <PlaylistContent title="Hello Future" name="NCT DREAM" time="3:17"/>
-                <PlaylistContent title="Smiley" name="Yena" time="3:24"/>
-                <PlaylistContent title="Kistch" name="IVE" time="3:50"/>
-                <PlaylistContent title="Queen card" name="G-IDLE" time="2:50"/>
-                <PlaylistContent title="Hello Future" name="NCT DREAM" time="3:17"/>
-                <PlaylistContent title="Smiley" name="Yena" time="3:24"/>
+            <div id="lyricAndPlaylistArea">
+                <div id="lyricPlaylistBtn"> 
+                {/* 버튼들 fix ~ 반응형으로*/}
+                    <ul>
+                        <li id="lyricBtn" onClick={clickLyricBtn}>가사</li>
+                        <li id="playlistBtn" onClick={clickPlaylistBtn} >재생목록</li>
+                    </ul>
+                </div>
+                <div id="contents-area">
+                    <div id="lyricArea">
+                        <MusicLyric/>
+                    </div>
+                    <div id="playlistArea">
+                        <MusicPlaylist/>
+                    </div>
+                </div>
             </div>
         </div>
     );

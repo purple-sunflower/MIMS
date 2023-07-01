@@ -1,0 +1,9 @@
+.playlistArea{
+    width: 330px;
+    height: 560px;
+    background-color: lightcoral;
+
+    float: left;
+
+    overflow: auto;
+}
