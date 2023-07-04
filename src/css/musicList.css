@@ -8,7 +8,7 @@
     background-color: yellowgreen;
 }
 
-h1 {
+#musicList-wrap> h1 {
     font-size: 25px;
     width: 100%;
     background-color: red;

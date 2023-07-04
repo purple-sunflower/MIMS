@@ -10,7 +10,7 @@
 }
 
 #user {
-    margin-left: 155px;
+    margin: 0 auto;
     width: 1000px;
     height: 170px;
     background-color: darkblue;
@@ -56,5 +56,16 @@
 }
 
 #user-name{
+    font-size: 25px;
+}
+
+#like-list{
+    margin: 50px auto;
+    width: 1000px;
+    height: 500px;
+    background-color: violet;
+}
+
+#like-list>h1{
     font-size: 25px;
 }

@@ -1,3 +1,5 @@
+// 내 보관함
+
 import '../css/myMusic.css'
 import Header from './header';
 import User from '../images/user.png'
@@ -6,7 +8,6 @@ function MyMusic() {
     return(
         <div id='myMusic-wrap'>
             <Header/>
-            내 보관함 입니다.
             <div id='user'>
                 <div id='user-left'>
                     <div id='user-img'>
@@ -18,6 +19,12 @@ function MyMusic() {
                         사용자 이름
                     </div>
                 </div>
+            </div>
+            <div id='like-list'>
+                <h1>좋아요 누른 곡</h1>
+            </div>
+            <div id='my-playlist'>
+
             </div>
         </div>
     );
