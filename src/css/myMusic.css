@@ -8,3 +8,53 @@
     height: 800px;
     background-color: orange;
 }
+
+#user {
+    margin-left: 155px;
+    width: 1000px;
+    height: 170px;
+    background-color: darkblue;
+}
+
+#user-left{
+    width: 170px;
+    height: 170px;
+    background-color: aqua;
+    padding-top: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#user-img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+
+    border-radius: 100%;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-img>img{
+    border: none;
+    width: 120px;
+    height: 120px;
+}
+
+#user-right{
+    width: 830px;
+    height: 100%;
+    background-color: yellowgreen;
+    float: left;
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#user-name{
+    font-size: 25px;
+}
