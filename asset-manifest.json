@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/MIMS/static/css/main.38c70a1c.css",
-    "main.js": "/MIMS/static/js/main.269502ac.js",
+    "main.css": "/MIMS/static/css/main.56116889.css",
+    "main.js": "/MIMS/static/js/main.ff30893e.js",
     "static/js/787.56d9acf9.chunk.js": "/MIMS/static/js/787.56d9acf9.chunk.js",
     "static/media/hello_future.jpg": "/MIMS/static/media/hello_future.10c7b22f86818e058f21.jpg",
     "static/media/logo.png": "/MIMS/static/media/logo.6269de82f24fcc0dcdab.png",
     "static/media/kitsch.jpg": "/MIMS/static/media/kitsch.1124b0a05050a63f4167.jpg",
     "static/media/hype_boy.jpg": "/MIMS/static/media/hype_boy.73f63d7246ebf7b830c7.jpg",
     "static/media/spicy.jpg": "/MIMS/static/media/spicy.1c084a3bc6aaa5ff6afb.jpg",
+    "static/media/user.png": "/MIMS/static/media/user.13e2133d86f46027e381.png",
     "index.html": "/MIMS/index.html",
-    "main.38c70a1c.css.map": "/MIMS/static/css/main.38c70a1c.css.map",
-    "main.269502ac.js.map": "/MIMS/static/js/main.269502ac.js.map",
+    "main.56116889.css.map": "/MIMS/static/css/main.56116889.css.map",
+    "main.ff30893e.js.map": "/MIMS/static/js/main.ff30893e.js.map",
     "787.56d9acf9.chunk.js.map": "/MIMS/static/js/787.56d9acf9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38c70a1c.css",
-    "static/js/main.269502ac.js"
+    "static/css/main.56116889.css",
+    "static/js/main.ff30893e.js"
   ]
 }
