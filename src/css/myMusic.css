@@ -60,14 +60,14 @@
     font-size: 25px;
 }
 
-#like-list{
+.myMusicBox{
     margin: 50px auto;
     width: 1000px;
-    height: auto;
+    height: 400px;
     background-color: violet;
 }
 
-#like-list>h1{
+.myMusicTitle{
     font-size: 25px;
     background-color: purple;
     padding: 10px 0;

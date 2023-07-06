@@ -1,6 +1,6 @@
 // 재생목록 컨텐츠 하나 (내 보관함에서 )
 
-import "../css/myMusicListContent.css"
+import "../css/myMusiclistContent.css"
 import Kistch from '../images/albumCover/kitsch.jpg' // 임시사진
 
 // 노래 제목, 가수, 노래 시간
