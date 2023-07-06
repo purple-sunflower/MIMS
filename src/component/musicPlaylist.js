@@ -7,7 +7,7 @@ function MusicPlaylist() {
   return (
     <div className="playlistArea">
         <PlaylistContent title="Kistch" name="IVE" time="3:50"/>
-        <PlaylistContent title="Queen card" name="G-IDLE" time="2:50"/>
+        <PlaylistContent title="Queencard" name="G-IDLE" time="2:50"/>
         <PlaylistContent title="Hello Future" name="NCT DREAM" time="3:17"/>
         <PlaylistContent title="Smiley" name="Yena" time="3:24"/>
         <PlaylistContent title="Red Flavor" name="Red Velvet" time="3:12"/>
