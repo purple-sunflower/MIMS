@@ -1,7 +1,9 @@
-import React from 'react';
-import '../css/musicBox.css'
+// 추천 음악 리스트 > 컨텐츠 하나
 
-function MusicBox(props){
+import React from 'react';
+import '../css/recMusicBox.css'
+
+function RecMusicBox(props){
     return(
         <div id='musicBox-wrap'>
          {props.imgSrc} <br/>
@@ -12,4 +14,4 @@ function MusicBox(props){
     );
 }
 
-export default MusicBox;
+export default RecMusicBox;

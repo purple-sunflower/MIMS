@@ -1,3 +1,5 @@
+//  음악 클릭 시, 나오는 재생 화면
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
@@ -8,10 +10,10 @@ import '../css/playMusic.css'
 import Header from './header';
 import Spicy from '../images/albumCover/spicy.jpg'
 import { useState } from "react";
-import PlaylistContent from "./playlistContent";
+import PlaylistContent from "./playlistBox";
 import { Link } from "react-router-dom";
-import MusicLyric from "./musicLyric";
-import MusicPlaylist from "./musicPlaylist";
+import PlayMusicLyric from "./playMusicLyric";
+import PlayMusicPlaylist from "./playMusicPlaylist";
 
 function PlayMusic() {
 
@@ -67,10 +69,10 @@ function PlayMusic() {
                 </div>
                 <div id="contents-area">
                     <div id="lyricArea">
-                        <MusicLyric/>
+                        <PlayMusicLyric/>
                     </div>
                     <div id="playlistArea">
-                        <MusicPlaylist/>
+                        <PlayMusicPlaylist/>
                     </div>
                 </div>
             </div>

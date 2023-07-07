@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import '../css/myMusic.css'
 import Header from './header';
 import User from '../images/user.png'
-import MyMusicListContent from './myMusicListContent';
-import MyPlaylistItem from './myPlaylistItem';
+import PlaylistMusicBox from './playlistMusicBox';
+import MyMusicPlaylistItem from './myMusicPlaylistItem';
 
 function MyMusic() {
     return(
@@ -29,19 +29,19 @@ function MyMusic() {
                 재생목록 리스트랑 똑같음. but, width가 다름
                 => 하나 더 만들어서 css만 수정 > 중복코드라 ㅠㅠ 
                 Q. 다른 방법? */}
-                <MyMusicListContent title="Kistch" name="IVE" album="I've IVE" time="3:50"/>
-                <MyMusicListContent title="Queencard" name="G-IDLE" album="I feel" time="2:50"/>
-                <MyMusicListContent title="Hello Future" name="NCT DREAM" album="Hello Future" time="3:17"/>
-                <MyMusicListContent title="Smiley" name="Yena" album="ˣ‿ˣ (SMiLEY)" time="3:24"/>
-                <MyMusicListContent title="Red Flavor" name="Red Velvet" album="The Red Summer" time="3:12"/>
+                <PlaylistMusicBox title="Kistch" name="IVE" album="I've IVE" time="3:50"/>
+                <PlaylistMusicBox title="Queencard" name="G-IDLE" album="I feel" time="2:50"/>
+                <PlaylistMusicBox title="Hello Future" name="NCT DREAM" album="Hello Future" time="3:17"/>
+                <PlaylistMusicBox title="Smiley" name="Yena" album="ˣ‿ˣ (SMiLEY)" time="3:24"/>
+                <PlaylistMusicBox title="Red Flavor" name="Red Velvet" album="The Red Summer" time="3:12"/>
             </div>
             <div id='my-playlist' className='myMusicBox'>
                 <h1 className='myMusicTitle'>재생목록</h1>
-                <Link to="/myMusic/storedPlaylist">
-                    <MyPlaylistItem playlistTitle = "은은한 풀내음이 가득한"/>
+                <Link to="/storedPlaylist">
+                    <MyMusicPlaylistItem playlistTitle = "은은한 풀내음이 가득한"/>
                 </Link>
-                <MyPlaylistItem playlistTitle = "스누피 커피우유보다 더 쎔"/>
-                <MyPlaylistItem playlistTitle = "오늘 하늘은 예쁘던가요?"/>
+                <MyMusicPlaylistItem playlistTitle = "스누피 커피우유보다 더 쎔"/>
+                <MyMusicPlaylistItem playlistTitle = "오늘 하늘은 예쁘던가요?"/>
             </div>
         </div>
     );

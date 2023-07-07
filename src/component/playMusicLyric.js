@@ -1,7 +1,7 @@
-// 가사 부분
-import "../css/musicLyric.css"
+// 재생 화면 > 가사 부분
+import "../css/playMusicLyric.css"
 
-function MusicLyric() {
+function PlayMusicLyric() {
   return (
     <div className="lyricArea">
         Uh-oh <br/>
@@ -69,4 +69,4 @@ function MusicLyric() {
   );
 }
 
-export default MusicLyric;
+export default PlayMusicLyric;

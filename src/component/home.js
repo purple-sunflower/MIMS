@@ -1,16 +1,16 @@
-// 전체화면
+// 전체화면 (기본 홈 화면)
 
 import "../css/home.css"
 import Header from "./header"
-import MusicList from "./musicList"
+import RecMusicList from "./recMusicList";
 
 function Home() {
   return (
     <div className="home">
       <Header/>
-      <MusicList/>
-      <MusicList/>
-      <MusicList/>
+      <RecMusicList/>
+      <RecMusicList/>
+      <RecMusicList/>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function App() {
         <Route path="/allMusic" element={<AllMusic/>}/>
         <Route path="/myMusic" element={<MyMusic/>}/>
         <Route path='/playMusic' element={<PlayMusic/>}/>
-        <Route path='/myMusic/storedPlaylist' element={<StoredPlaylist/>}/>
+        <Route path='/storedPlaylist' element={<StoredPlaylist/>}/>
       </Routes>
     </BrowserRouter>
   );

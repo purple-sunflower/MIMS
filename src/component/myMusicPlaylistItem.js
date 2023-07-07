@@ -1,13 +1,13 @@
 // 한 재생목록 모음
 
-import "../css/myPlaylistItem.css"
+import "../css/myMusicPlaylistItem.css"
 import Kistch from '../images/albumCover/kitsch.jpg' // 임시 1
 import HypeBoy from '../images/albumCover/hype_boy.jpg' // 임시 2
 import Spicy from '../images/albumCover/spicy.jpg' // 임시 3
 import HelloFuture from '../images/albumCover/hello_future.jpg' // 임시 4
 
 // 노래 제목, 가수, 노래 시간
-function MyPlaylistItem(props) {
+function MyMusicPlaylistItem(props) {
   return (
     <div className="myPlaylistItem-wrap">
       <div id="img-area">
@@ -23,4 +23,4 @@ function MyPlaylistItem(props) {
   );
 }
 
-export default  MyPlaylistItem;
+export default  MyMusicPlaylistItem;

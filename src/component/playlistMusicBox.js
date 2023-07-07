@@ -1,10 +1,11 @@
-// 재생목록 컨텐츠 하나
+// 재생목록 컨텐츠 하나 (내 보관함에서)
+// 기존 playlistBox에서 "앨범" 항목 추가
 
-import "../css/playlistContent.css"
+import "../css/playlistMusicBox.css"
 import Kistch from '../images/albumCover/kitsch.jpg' // 임시사진
 
 // 노래 제목, 가수, 노래 시간
-function PlaylistContent(props) {
+function PlaylistMusicBox(props) {
   return (
     <div className="playlist-wrap">
       <div id="img-area">
@@ -13,6 +14,7 @@ function PlaylistContent(props) {
       <div id="left-area">
         <span>{props.title}</span>
         <span>{props.name}</span>
+        <span>{props.album}</span>
       </div>
       <div id="right-area">
         <span>{props.time}</span>
@@ -21,4 +23,4 @@ function PlaylistContent(props) {
   );
 }
 
-export default PlaylistContent;
+export default PlaylistMusicBox;
