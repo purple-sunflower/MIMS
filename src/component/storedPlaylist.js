@@ -1,15 +1,13 @@
 // 내 보관함
 
-import { Link } from 'react-router-dom';
-import '../css/myMusic.css'
+import '../css/storedPlaylist.css'
 import Header from './header';
 import User from '../images/user.png'
 import MyMusicListContent from './myMusicListContent';
-import MyPlaylistItem from './myPlaylistItem';
 
 function MyMusic() {
     return(
-        <div id='myMusic-wrap'>
+        <div id='storedPlaylist-wrap'>
             <Header/>
             <div id='user'>
                 <div id='user-left'>
@@ -34,14 +32,6 @@ function MyMusic() {
                 <MyMusicListContent title="Hello Future" name="NCT DREAM" album="Hello Future" time="3:17"/>
                 <MyMusicListContent title="Smiley" name="Yena" album="ˣ‿ˣ (SMiLEY)" time="3:24"/>
                 <MyMusicListContent title="Red Flavor" name="Red Velvet" album="The Red Summer" time="3:12"/>
-            </div>
-            <div id='my-playlist' className='myMusicBox'>
-                <h1 className='myMusicTitle'>재생목록</h1>
-                <Link to="/myMusic/storedPlaylist">
-                    <MyPlaylistItem playlistTitle = "은은한 풀내음이 가득한"/>
-                </Link>
-                <MyPlaylistItem playlistTitle = "스누피 커피우유보다 더 쎔"/>
-                <MyPlaylistItem playlistTitle = "오늘 하늘은 예쁘던가요?"/>
             </div>
         </div>
     );

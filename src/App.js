@@ -6,6 +6,8 @@ import Home from "./component/home";
 import AllMusic from "./component/allMusic";
 import MyMusic from "./component/myMusic";
 import PlayMusic from "./component/playMusic";
+import StoredPlaylist from "./component/storedPlaylist";
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/allMusic" element={<AllMusic/>}/>
         <Route path="/myMusic" element={<MyMusic/>}/>
         <Route path='/playMusic' element={<PlayMusic/>}/>
+        <Route path='/myMusic/storedPlaylist' element={<StoredPlaylist/>}/>
       </Routes>
     </BrowserRouter>
   );

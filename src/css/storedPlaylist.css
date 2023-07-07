@@ -3,10 +3,10 @@
     padding: 0;
 }
 
-#myMusic-wrap{
+#storedPlaylist-wrap{
     width: 100%;
     height: 1600px;
-    background-color: orange;
+    background-color: orangered;
 }
 
 #user {
