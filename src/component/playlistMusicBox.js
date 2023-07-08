@@ -7,7 +7,7 @@ import Kistch from '../images/albumCover/kitsch.jpg' // 임시사진
 // 노래 제목, 가수, 노래 시간
 function PlaylistMusicBox(props) {
   return (
-    <div className="playlist-wrap">
+    <div className="playlistMusicBox-wrap">
       <div id="img-area">
         <img src={Kistch}/>
       </div>

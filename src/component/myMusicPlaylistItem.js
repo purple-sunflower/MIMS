@@ -9,7 +9,7 @@ import HelloFuture from '../images/albumCover/hello_future.jpg' // 임시 4
 // 노래 제목, 가수, 노래 시간
 function MyMusicPlaylistItem(props) {
   return (
-    <div className="myPlaylistItem-wrap">
+    <div className="myMusicPlaylistItem-wrap">
       <div id="img-area">
         <img src={Kistch}/>
         <img src={HypeBoy}/>

@@ -15,11 +15,11 @@
     /*헤더 고정은 나중에 반응형에서 주기*/
 }
 
-.box{
+#header-wrap>.box{
     float: left; /* 왼쪽 정렬 */
 }
 
-#logo-box{
+#header-wrap>#logo-box{
     width: 165px;
     height: 60px;
     background-color: magenta;
@@ -29,12 +29,12 @@
     justify-content: center;
 }
 
-#logo-img{
+#header-wrap>#logo-box>#logo-img{
     width: 100px;
     height: 50px;
 }
 
-#btn-group{
+#header-wrap>#btn-group{
     width: 500px;
     height: 100%;
     padding-left: 50px;
@@ -43,7 +43,7 @@
     background-color: blue;
 }
 
-.btn {
+#header-wrap>#btn-group>.btn {
     float: left;
     display: block;
     width: fit-content;
@@ -55,7 +55,7 @@
     background-color: yellow;
 }
 
-#search-area{
+#header-wrap>#search-area{
     width: 500px;
     height: 100%;
     display: flex;
@@ -63,20 +63,20 @@
     background-color: aqua;
 }
 
-#searchIcon{
+#header-wrap>#search-area>#searchIcon{
     width: 15px;
     height: 15px;
     padding: 0 15px;
 }
 
-#searchInput{
+#header-wrap>#search-area>#searchInput{
     width: 350px;
     height: 25px;
     /* margin-left: -40px; */
     font-size: 15px;
 }
 
-#user-area{
+#header-wrap>#user-area{
     width: 50px;
     height: 50px;
     background-color: lightblue;
@@ -90,7 +90,7 @@
     justify-content: center;
 }
 
-#userIcon{
+#header-wrap>#user-area>#userIcon{
     width: 20px;
     height: 20px;
 }

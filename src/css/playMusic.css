@@ -9,7 +9,7 @@
     background-color: lightseagreen;
 }
 
-#playContents{
+#playMusic-wrap>#playContents{
     width: 500px;
     height: 560px;
     float: left;
@@ -21,13 +21,13 @@
     box-sizing: border-box;
 }
 
-img{
+#playMusic-wrap>#playContents>#img{
     width: 400px;
     height: 400px;
     border: solid 2px white;
 }
 
-.content {
+#playMusic-wrap>#playContents>.content {
     display: block;
     width: 400px;
     height: 40px;
@@ -37,14 +37,14 @@ img{
     justify-content: center;
 }
 
-#btnCollection{
+#playMusic-wrap>#playContents>#btnCollection{
     height: 60px;
     background-color: lightgray;
     justify-content: space-evenly; 
     /* 아이템들의 사이와 양 끝에 균일한 간격 */
 }
 
-#lyricAndPlaylistArea{
+#playMusic-wrap>#lyricAndPlaylistArea{
     width: 500px;
     height: 560px;
     background-color: olive;
@@ -57,7 +57,7 @@ img{
     overflow: auto;
 }
 
-#lyricPlaylistBtn{
+#playMusic-wrap>#lyricAndPlaylistArea>#lyricPlaylistBtn{
     width: 445px;
     height: 50px;
     background-color: goldenrod;
@@ -66,7 +66,7 @@ img{
     box-sizing: border-box;
 }
 
-#lyricPlaylistBtn>ul>li{
+#playMusic-wrap>#lyricAndPlaylistArea>#lyricPlaylistBtn>ul>li{
     width: 205px;
     height: 40px;
     background-color: magenta;
@@ -74,6 +74,6 @@ img{
     text-align: center; /* 글씨 중앙정렬 */
 }
 
-#lyricBtn{
+#playMusic-wrap>#lyricAndPlaylistArea>#lyricPlaylistBtn>ul>#lyricBtn{
     border-bottom: 1px solid black;
 }

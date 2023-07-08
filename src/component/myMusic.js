@@ -11,7 +11,7 @@ function MyMusic() {
     return(
         <div id='myMusic-wrap'>
             <Header/>
-            <div id='user'>
+            <div id='user-area'>
                 <div id='user-left'>
                     <div id='user-img'>
                         <img src={User}/>
@@ -26,7 +26,7 @@ function MyMusic() {
             <div id='like-list' className='myMusicBox'>
                 <h1 className='myMusicTitle'>좋아요 누른 곡</h1>
                 {/* 230706 
-                재생목록 리스트랑 똑같음. but, width가 다름
+                재생목록 리스트랑 똑같음. but, width가 다름 & album 요소 추가
                 => 하나 더 만들어서 css만 수정 > 중복코드라 ㅠㅠ 
                 Q. 다른 방법? */}
                 <PlaylistMusicBox title="Kistch" name="IVE" album="I've IVE" time="3:50"/>

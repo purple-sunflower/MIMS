@@ -1,4 +1,4 @@
-#musicList-wrap{
+#recMusicList-wrap{
     margin-bottom: 50px;
     padding: 20px 50px; /*상하 좌우*/
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     background-color: yellowgreen;
 }
 
-#musicList-wrap> h1 {
+#recMusicList-wrap> h1 {
     font-size: 25px;
     width: 100%;
     background-color: red;

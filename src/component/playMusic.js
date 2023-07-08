@@ -10,7 +10,6 @@ import '../css/playMusic.css'
 import Header from './header';
 import Spicy from '../images/albumCover/spicy.jpg'
 import { useState } from "react";
-import PlaylistContent from "./playlistBox";
 import { Link } from "react-router-dom";
 import PlayMusicLyric from "./playMusicLyric";
 import PlayMusicPlaylist from "./playMusicPlaylist";
@@ -47,7 +46,7 @@ function PlayMusic() {
         <div id='playMusic-wrap'>
             <Header/>
             <div id='playContents'>
-                <img src={Spicy}/>
+                <img src={Spicy} id="img"/>
                 <span className="content" id ='title'>제목: Spicy </span>
                 <span className="content" id ='name'>가수: aespa</span> 
                 <span className="content" id="playBar">0:58 ───♡───────── 3:47</span>

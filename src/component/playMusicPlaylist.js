@@ -5,7 +5,7 @@ import PlaylistBox from "./playlistBox";
 
 function PlayMusicPlaylist() {
   return (
-    <div className="playlistArea">
+    <div className="playMusicPlaylistArea">
         <PlaylistBox title="Kistch" name="IVE" time="3:50"/>
         <PlaylistBox title="Queencard" name="G-IDLE" time="2:50"/>
         <PlaylistBox title="Hello Future" name="NCT DREAM" time="3:17"/>

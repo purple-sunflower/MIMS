@@ -6,10 +6,15 @@ import User from '../images/user.png'
 import PlaylistMusicBox from './playlistMusicBox';
 
 function MyMusic() {
+
+    const clickBtn = () => {
+        alert("You click your button!");
+    } // 버튼 작동 확인
+
     return(
         <div id='storedPlaylist-wrap'>
             <Header/>
-            <div id='user'>
+            <div id='user-area'>
                 <div id='user-left'>
                     <div id='user-img'>
                         <img src={User}/>
@@ -19,6 +24,14 @@ function MyMusic() {
                     <div id="user-name">
                         재생목록 이름
                     </div>
+                    <div id="btn-collection">
+                        <button className='btn' id='shuffle-btn' onClick={clickBtn}>
+                            셔플
+                        </button>
+                        <button className='btn' id="modify-btn" onClick={clickBtn}>
+                            재생목록 수정
+                        </button>
+                    </div>
                 </div>
             </div>
             <div id='like-list' className='myMusicBox'>
@@ -27,6 +40,11 @@ function MyMusic() {
                 재생목록 리스트랑 똑같음. but, width가 다름
                 => 하나 더 만들어서 css만 수정 > 중복코드라 ㅠㅠ 
                 Q. 다른 방법? */}
+                <PlaylistMusicBox title="Kistch" name="IVE" album="I've IVE" time="3:50"/>
+                <PlaylistMusicBox title="Queencard" name="G-IDLE" album="I feel" time="2:50"/>
+                <PlaylistMusicBox title="Hello Future" name="NCT DREAM" album="Hello Future" time="3:17"/>
+                <PlaylistMusicBox title="Smiley" name="Yena" album="ˣ‿ˣ (SMiLEY)" time="3:24"/>
+                <PlaylistMusicBox title="Red Flavor" name="Red Velvet" album="The Red Summer" time="3:12"/>
                 <PlaylistMusicBox title="Kistch" name="IVE" album="I've IVE" time="3:50"/>
                 <PlaylistMusicBox title="Queencard" name="G-IDLE" album="I feel" time="2:50"/>
                 <PlaylistMusicBox title="Hello Future" name="NCT DREAM" album="Hello Future" time="3:17"/>

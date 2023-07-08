@@ -1,5 +1,5 @@
 *{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
@@ -9,14 +9,14 @@
     background-color: orange;
 }
 
-#user {
+#myMusic-wrap>#user-area{
     margin: 0 auto;
     width: 1000px;
     height: 170px;
     background-color: darkblue;
 }
 
-#user-left{
+#myMusic-wrap>#user-area>#user-left{
     width: 170px;
     height: 170px;
     background-color: aqua;
@@ -25,7 +25,7 @@
     float: left;
 }
 
-#user-img{
+#myMusic-wrap>#user-area>#user-left>#user-img{
     width: 150px;
     height: 150px;
     margin: 0 auto;
@@ -37,13 +37,13 @@
     justify-content: center;
 }
 
-#user-img>img{
+#myMusic-wrap>#user-area>#user-left>#user-img>img{
     border: none;
     width: 120px;
     height: 120px;
 }
 
-#user-right{
+#myMusic-wrap>#user-area>#user-right{
     margin: 0;
     width: 830px;
     height: 100%;
@@ -52,22 +52,24 @@
 
     display: flex;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
-#user-name{
+#myMusic-wrap>#user-area>#user-right>#user-name{
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
     font-size: 25px;
+    margin: 20px;
 }
 
-.myMusicBox{
+#myMusic-wrap>.myMusicBox{
     margin: 50px auto;
     width: 1000px;
     height: 400px;
     background-color: violet;
 }
 
-.myMusicTitle{
+#myMusic-wrap>.myMusicBox>.myMusicTitle{
     font-size: 25px;
     background-color: purple;
     padding: 10px 0;

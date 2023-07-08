@@ -3,7 +3,7 @@ import "../css/playMusicLyric.css"
 
 function PlayMusicLyric() {
   return (
-    <div className="lyricArea">
+    <div className="playMusicLyricArea">
         Uh-oh <br/>
         Too spicy <br/>
         <br/>

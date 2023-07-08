@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.myPlaylistItem-wrap{
+.myMusicPlaylistItem-wrap{
     width: 250px;
     height: 300px;
     margin: 20px;
@@ -11,7 +11,7 @@
     float: left;
 }
 
-.myPlaylistItem-wrap>#img-area{
+.myMusicPlaylistItem-wrap>#img-area{
     width: 240px;
     height: 240px;
     background-color: red;
@@ -20,12 +20,12 @@
     box-sizing: border-box;
 }
 
-.myPlaylistItem-wrap>#img-area>img{
+.myMusicPlaylistItem-wrap>#img-area>img{
     width: 110px;
     height: 110px;
 }
 
-.myPlaylistItem-wrap>#playlist-title{
+.myMusicPlaylistItem-wrap>#playlist-title{
     text-align: center;
     padding-top: 15px;
     box-sizing: border-box;

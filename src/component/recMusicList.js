@@ -16,7 +16,7 @@ import HypeBoy from '../images/albumCover/hype_boy.jpg'
 
 function RecMusicList(){
     return(
-        <div id='musicList-wrap'>
+        <div id='recMusicList-wrap'>
             <h1>상큼한 K-POP, 들어 볼래?</h1>
             <RecMusicBox imgSrc = {<img className='img' src={Kistch}/>} // 되긴 하지만... 더 좋은 방법은?
                     title="Kitsch" 
