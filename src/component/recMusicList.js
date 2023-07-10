@@ -37,6 +37,16 @@ function RecMusicList(){
                     title="Hype boy" 
                     name="New Jeans" 
                     genre="K-POP"/>
+            <RecMusicBox imgSrc = {<img className='img' src={Kistch}/>} // 되긴 하지만... 더 좋은 방법은?
+                    title="Kitsch" 
+                    name="IVE" 
+                    genre="K-POP"/>
+            <Link to="/playMusic">
+                <RecMusicBox imgSrc = {<img className='img' src={Spicy}/>} 
+                        title="Spicy" 
+                        name="AESPA" 
+                        genre="K-POP"/>
+            </Link> 
         </div>
     );
 }

@@ -6,10 +6,14 @@ import '../css/recMusicBox.css'
 function RecMusicBox(props){
     return(
         <div id='recMusicBox-wrap'>
-         {props.imgSrc} <br/>
-         제목: {props.title} <br/>
-         가수: {props.name} <br/>
-         장르: {props.genre} <br/>
+         <div id='top'>
+            {props.imgSrc} 
+         </div>
+         <div id='bottom'>
+            <span>{props.title}{/* 제목 */}</span>
+            <span>{props.name}{/* 가수 */}</span>
+         </div>
+         {/* 장르: {props.genre} <br/> */}
         </div>
     );
 }

@@ -13,6 +13,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import PlayMusicLyric from "./playMusicLyric";
 import PlayMusicPlaylist from "./playMusicPlaylist";
+import PlayMusicComment from "./playMusicComment";
 
 function PlayMusic() {
 
@@ -24,6 +25,11 @@ function PlayMusic() {
     const togglePlayBtn = () => {
         setPlay(!isPlay); // playBtn
     }
+
+    // 230710 처음에 나올 때, 가사 부분에 재생목록도 같이 나옴
+    // 처음에 가사부분에 "가사"만 나오게 하는 법?
+
+
 
     const clickLyricBtn = () => { // "가사" 버튼 클릭 시 > 재생목록 항목 안보이게
         document.getElementById('playlistArea').style = "display:none";
@@ -73,7 +79,10 @@ function PlayMusic() {
                     <div id="playlistArea">
                         <PlayMusicPlaylist/>
                     </div>
-                </div>
+                </div>    
+            </div>
+            <div id="commentArea"> {/* 댓글창 */}
+                <PlayMusicComment/>
             </div>
         </div>
     );
