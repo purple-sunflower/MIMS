@@ -1,7 +1,9 @@
+
 .commentBoxArea{
     width: 400px;
     height: 60px;
     background-color: gold;
+    margin-bottom: 10px;
 }
 
 .commentBoxArea>#com-left {
@@ -38,4 +40,5 @@
 
 .commentBoxArea>#com-right>#com-contents{
     background-color: lightslategray;
+    font-weight: 300;
 }

@@ -7,11 +7,14 @@ import AllMusic from "./component/allMusic";
 import MyMusic from "./component/myMusic";
 import PlayMusic from "./component/playMusic";
 import StoredPlaylist from "./component/storedPlaylist";
+import ScrollToTop from "./component/scrollToTop";
 
 
 function App() {
   return (
     <BrowserRouter>
+    {/* 스크롤 맨 위로 올리기 위한 컴포넌트 */}
+    <ScrollToTop/> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/MIMS" element={<Home />} />

@@ -77,3 +77,7 @@
 #playMusic-wrap>#lyricAndPlaylistArea>#lyricPlaylistBtn>ul>#lyricBtn{
     border-bottom: 1px solid black;
 }
+
+#playMusic-wrap>#lyricAndPlaylistArea>#contents-area>#playlistArea{
+    display: none;
+}

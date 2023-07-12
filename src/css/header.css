@@ -66,13 +66,12 @@
 #header-wrap>#search-area>#searchIcon{
     width: 15px;
     height: 15px;
-    padding: 0 15px;
+    padding-left: 20px;
 }
 
 #header-wrap>#search-area>#searchInput{
-    width: 350px;
+    width: 400px;
     height: 25px;
-    /* margin-left: -40px; */
     font-size: 15px;
 }
 
@@ -81,6 +80,7 @@
     height: 50px;
     background-color: lightblue;
     margin-top: 5px;
+    margin-left: 10px;
     
     border-radius: 100%;
     border: solid gray 1px;

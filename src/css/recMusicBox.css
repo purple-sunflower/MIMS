@@ -9,7 +9,8 @@
     background-color: green;
     float: left;
 
-    margin-right: 50px; /*간격 조정*/
+    margin-right: 55px; /*간격 조정*/
+    margin-bottom: 20px;
 }
 
 #recMusicBox-wrap>#top{

@@ -4,15 +4,15 @@
 import "../css/commentBox.css"
 import Profile from "../images/profile.jpg"
 
-function CommentBox() {
+function CommentBox(props) {
   return (
     <div className="commentBoxArea">
         <div id="com-left">
             <img id="com-img" src={Profile}/>
         </div>
         <div id="com-right">
-            <span id="com-nickname">닉네임</span>
-            <span id="com-contents">유지민 사랑해</span>
+            <span id="com-nickname">{props.nickname}</span>
+            <span id="com-contents">{props.comment}</span>
         </div>
     </div>
   );
