@@ -8,6 +8,7 @@ import MyMusic from "./component/myMusic";
 import PlayMusic from "./component/playMusic";
 import StoredPlaylist from "./component/storedPlaylist";
 import ScrollToTop from "./component/scrollToTop";
+import SearchMusic from './component/searchMusic';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/myMusic" element={<MyMusic/>}/>
         <Route path='/playMusic' element={<PlayMusic/>}/>
         <Route path='/storedPlaylist' element={<StoredPlaylist/>}/>
+        <Route path='/searchMusic' element={<SearchMusic/>}/>
       </Routes>
     </BrowserRouter>
   );

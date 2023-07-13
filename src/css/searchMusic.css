@@ -1,0 +1,9 @@
+*{
+    margin: 0 auto;
+}
+
+.searchMusic{
+    width: 100%;
+    height: 1000px;
+    background-color: rosybrown;
+}
