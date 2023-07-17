@@ -7,7 +7,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import React from 'react'
 import {Link} from 'react-router-dom'
 import '../css/header.css'
-import Logo from "../images/logo.png" // 이미지 삽입을 위한 import
+import Logo from "../images/logo2.png" // 이미지 삽입을 위한 import
 
 function Header(){
 

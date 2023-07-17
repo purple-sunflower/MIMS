@@ -16,9 +16,6 @@ function SearchMusicBox(props) {
             {props.title}
         </div>
         <div id="detail-area">
-            {/* <span id="singer"> {props.singer} </span>
-            <span id="album">{props.album}</span>
-            <span id="time">{props.time}</span> */}
             {props.singer}  |  {props.album}  |  {props.time}
         </div>
       </div>

@@ -16,13 +16,18 @@
     height: 240px;
     background-color: red;
     margin: 5px;
-    padding: 5px;
-    box-sizing: border-box;
 }
 
 .myMusicPlaylistItem-wrap>#img-area>img{
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
+}
+
+.myMusicPlaylistItem-wrap>#img-area>img:first-child{
+    margin-bottom: -4px;
+}
+.myMusicPlaylistItem-wrap>#img-area>img:nth-child(2){
+    margin-bottom: -4px;
 }
 
 .myMusicPlaylistItem-wrap>#playlist-title{

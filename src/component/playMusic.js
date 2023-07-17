@@ -10,7 +10,6 @@ import '../css/playMusic.css'
 import Header from './header';
 import Spicy from '../images/albumCover/spicy.jpg'
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import PlayMusicLyric from "./playMusicLyric";
 import PlayMusicPlaylist from "./playMusicPlaylist";
 import PlayMusicComment from "./playMusicComment";
@@ -25,22 +24,6 @@ function PlayMusic() {
     const togglePlayBtn = () => {
         setPlay(!isPlay); // playBtn
     }
-
-    // 230710 처음에 나올 때, 가사 부분에 재생목록도 같이 나옴
-    // 처음에 가사부분에 "가사"만 나오게 하는 법?
-    // componentDidMount???
-
-    // 230712 해결! > getElementById의 style속성을 이용해
-    // "display:none"; 직접 지정!
-    // 리액트 식으로는 어떻게 해결? 
-
-    // 230712
-    // document.getElementById('playlistArea').style = "display:none";
-    // 처음엔 문제 없었는데 2번째 시도 이후로 부터 안됨
-    // css에 display:none;해서 해결
-    // 리액트 식으로는 어떻게 해결? 
-    // > 음,.. 리액트식이라는게 따로 있나?
-    // 그냥 css에 넣어서 해결했으니 고민하지 않아도 될 듯?
 
     const clickLyricBtn = () => { // "가사" 버튼 클릭 시 > 재생목록 항목 안보이게
         document.getElementById('playlistArea').style = "display:none";
@@ -58,6 +41,7 @@ function PlayMusic() {
 
     // 230701 토글 방식으로 가능하지 않을까..? 좀 더 나은 메서드 생각해봐!
     // hasclass인가 있는데... 
+    // 230717 hassClass는 jQuery 문법! 그대로 사용해도 될 듯?
 
     return(
         <div id='playMusic-wrap'>

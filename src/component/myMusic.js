@@ -40,8 +40,6 @@ function MyMusic() {
                 <Link to="/storedPlaylist">
                     <MyMusicPlaylistItem playlistTitle = "은은한 풀내음이 가득한"/>
                 </Link>
-                {/* 230712 storedPlaylist로 페이지 이동 시, 페이지가 맨 위로 자동으로 올라가면 좋겠다.. 우예해?
-                scrollToTop() 컴포넌트 생성 후 App에 넣어줘! */}
                 <MyMusicPlaylistItem playlistTitle = "스누피 커피우유보다 더 쎔"/>
                 <MyMusicPlaylistItem playlistTitle = "오늘 하늘은 예쁘던가요?"/>
             </div>
