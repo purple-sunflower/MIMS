@@ -41,7 +41,7 @@ function PlayMusic() {
 
     // 230701 토글 방식으로 가능하지 않을까..? 좀 더 나은 메서드 생각해봐!
     // hasclass인가 있는데... 
-    // 230717 hassClass는 jQuery 문법! 그대로 사용해도 될 듯?
+    // 230717 hasClass는 jQuery 문법! 그대로 사용해도 될 듯?
 
     return(
         <div id='playMusic-wrap'>
@@ -72,7 +72,10 @@ function PlayMusic() {
                         <PlayMusicLyric/>
                     </div>
                     <div id="playlistArea">
-                        {/* 230712 재생목록 리스트 밑에 공간 조금 만들고픔. 어케함? */}
+                        {/* 230712 재생목록 리스트 밑에 공간 조금 만들고픔. 어케함? 
+                            230719 PlayMusicPlaylist 컴포넌트에서 padding-bottom 값 줘서 처리
+                                   임시방편의 느낌이 들긴 함.
+                        */}
                         <PlayMusicPlaylist/>
                     </div>
                 </div>    

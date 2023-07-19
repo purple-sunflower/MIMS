@@ -30,3 +30,24 @@ function App() {
 }
 
 export default App;
+
+// import "./api/lastfm_api";
+// import "./api/lastfm_api_cache";
+// import "./api/lastfm_api_md5";
+
+// /* Create a cache object */
+// var cache = new LastFMCache();
+
+// /* Create a LastFM object */
+// var lastfm = new LastFM({
+//   apiKey    : 'b79403edb1c5830470fd6b7d00a2f950',
+//   apiSecret : 'd2894303d08206f43647c642d5267f93',
+//   cache     : cache
+// });
+
+// /* Load some artist info. */
+// lastfm.artist.getInfo({artist: 'The xx'}, {success: function(data){
+//   /* Use data. */
+// }, error: function(code, message){
+//   /* Show error message. */
+// }});

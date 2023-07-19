@@ -10,6 +10,8 @@ import HelloFuture from '../images/albumCover/hello_future.jpg'
 import HypeBoy from '../images/albumCover/hype_boy.jpg'
 
 function AllMusic(){
+
+
     return(
         <div id='allMusic-wrap'>
          <Header/>

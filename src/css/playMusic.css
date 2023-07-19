@@ -45,12 +45,12 @@
 }
 
 #playMusic-wrap>#lyricAndPlaylistArea{
-    width: 500px;
+    width: 512px;
     height: 560px;
     background-color: olive;
 
     float: left;
-    padding: 20px;
+    padding: 25px;
     box-sizing: border-box;
 
     line-height: 1.5;
@@ -81,3 +81,5 @@
 #playMusic-wrap>#lyricAndPlaylistArea>#contents-area>#playlistArea{
     display: none;
 }
+
+
