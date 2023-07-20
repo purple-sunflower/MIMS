@@ -13,15 +13,27 @@
     margin-bottom: 20px;
 }
 
-#recMusicBox-wrap:hover{
+#recMusicBox-wrap>#top:hover{
     opacity: 40%;
 }
 
 #recMusicBox-wrap>#top{
     width: 100%;
     height: 170px;
-    background-color: yellow;
+    background-color: darkgray;
+    position: relative;
 }
+
+#recMusicBox-wrap>#play{
+    position: absolute;
+    top: 230px;
+    left: 120px;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 40;
+    display: none;
+}
+
 
 #recMusicBox-wrap>#bottom{
     width: 100%;
