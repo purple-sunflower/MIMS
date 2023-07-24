@@ -32,7 +32,7 @@ function Header(){
                 </button>
             </div>
             <div id='search-area' className='box'>
-                <Link to="/searchMusic">
+                <Link to="/searchSample"> 
                     <FontAwesomeIcon icon={faSearch} id="searchIcon"/>
                 </Link>
                 <input id='searchInput' placeholder="검색어를 입력하세요."/>
