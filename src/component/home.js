@@ -2,6 +2,7 @@
 
 import "../css/home.css"
 import Header from "./header"
+import PlayBar from "./playBar";
 import RecMusicList from "./recMusicList";
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
       <RecMusicList/>
       <RecMusicList/>
       <RecMusicList/>
+      <PlayBar/>
     </div>
   );
 }
