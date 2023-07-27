@@ -1,5 +1,87 @@
 .playBar-wrap {
-    width: 95%;
-    height: 150px;
+    width: 1000px;
+    height: 100px;
     background-color: pink;
+}
+
+.playBar-wrap>div{
+    float: left;
+}
+
+.playBar-wrap>#songInfoArea{
+    width: 400px;
+    height: 100%;
+    background-color: greenyellow;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.playBar-wrap>#songInfoArea>#albumArea>#albumImg{
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+}
+
+.playBar-wrap>#songInfoArea>.area{
+    float: left;
+    margin-left: 15px;
+    width: 250px;
+    height: 40px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.playBar-wrap>#songInfoArea>#titleArea{
+    background-color: red;
+}
+
+.playBar-wrap>#songInfoArea>#nameArea{
+    background-color: yellow;
+}
+
+.playBar-wrap>#playBtnArea{
+    width: 170px;
+    height: 100%;
+    background-color: orange;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.playBar-wrap>#playBtnArea>.icon{
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+.playBar-wrap>#playBtnArea>#faBackward{
+    margin-left: 0px;
+}
+
+.playBar-wrap>#playBtnArea>#faPlay{
+    padding-top: 5px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.playBar-wrap>#timeArea{
+    width: 100px;
+    height: 100%;
+    background-color: pink;
+
+    padding-top: 35px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.playBar-wrap>#detailBtnArea{
+    width: 330px;
+    height: 100%;
+    background-color: lightyellow;
+    display: flex;
+    flex: space-between;
+    align-items: center;
+}
+
+.playBar-wrap>#detailBtnArea>.fa{
+    font-size: 17px;
 }
