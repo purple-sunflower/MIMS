@@ -4,6 +4,7 @@ import "../css/home.css"
 import Header from "./header"
 import PlayBar from "./playBar";
 import RecMusicList from "./recMusicList";
+import SearchSample from "./searchSample";
 
 function Home() {
   return (

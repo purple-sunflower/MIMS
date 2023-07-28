@@ -3,6 +3,8 @@
 import React from 'react';
 import "../css/playBar.css"
 import Image from '../images/blackImg.png'
+import { useState } from 'react';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +16,12 @@ import { faRepeat } from "@fortawesome/free-solid-svg-icons";
 import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
 
 function PlayBar() {
+
+  const [isPlay, setPlay] = useState(true);
+    const togglePlayBtn = () => {
+        setPlay(!isPlay); // playBtn
+    }
+
   return (
     <div className='playBar-wrap'>
       <div id='songInfoArea'>
@@ -32,9 +40,11 @@ function PlayBar() {
         <div id='playBtnArea'>
           {/* 재생 버튼 칸 입니다.   */}
           {/* 재생 버튼, 시간 표시 필요 */}
-          <FontAwesomeIcon icon ={faBackward} id='faBackward' className='icon'/>
-          <FontAwesomeIcon icon ={faPlay} id='faPlay' className='icon'/>
-          <FontAwesomeIcon icon ={faForward} id='faForward' className='icon'/>
+          <FontAwesomeIcon icon ={faBackward} id='faBackward'/>
+          <div onClick={togglePlayBtn}>
+            {isPlay ? <FontAwesomeIcon icon ={faPlay}/> : <FontAwesomeIcon icon ={faPause}/>}
+          </div>
+          <FontAwesomeIcon icon ={faForward} id='faForward'/>
         </div>
         <div id='timeArea'>
           1:03 / 3:06

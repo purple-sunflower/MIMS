@@ -41,35 +41,22 @@
 }
 
 .playBar-wrap>#playBtnArea{
-    width: 170px;
+    width: 150px;
     height: 100%;
     background-color: orange;
-    padding-top: 30px;
+    padding-top: 40px;
     box-sizing: border-box;
-}
-
-.playBar-wrap>#playBtnArea>.icon{
-    font-size: 20px;
-    margin-left: 45px;
-}
-
-.playBar-wrap>#playBtnArea>#faBackward{
-    margin-left: 0px;
-}
-
-.playBar-wrap>#playBtnArea>#faPlay{
-    padding-top: 5px;
-    box-sizing: border-box;
-    font-size: 30px;
+    display: flex;
+    flex-direction: space-between;
 }
 
 .playBar-wrap>#timeArea{
-    width: 100px;
+    width: 120px;
     height: 100%;
     background-color: pink;
 
     padding-top: 35px;
-    padding-left: 10px;
+    padding-left: 20px;
     box-sizing: border-box;
 }
 

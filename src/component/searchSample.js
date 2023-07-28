@@ -5,10 +5,18 @@ import "../css/searchSample.css"
 import black from "../images/blackImg.png"
 import PlaylistMusicBox from './playlistMusicBox';
 import Header from './header';
+import Result from './result';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 // 스포티파이를 통해 로그인 시, redirect_uri로 연결!
 
 // 230726 노래 검색 시, 뜨도록 해야함 ! (지금은 가수만 나옴 ㅠㅠ)
+// 230727 로그아웃하고 다시 로그인하니까 안됨... uri 등록 해야하나? >이미 되어있는디?
+// 애초에 로그인 상태였을 때도 401 에러 뜸..
+// 230728 엥 된다... 원래 원버전에서 로그인 하고 나서 하니까 되넹... > 왜 또 안됨? => 됐다 안됐다 함!!!!!!!!!
 
 function SearchSample() {
     const CLIENT_ID = "3a5c7bcf08c24a9cad7adbcbf594d6ba"
@@ -62,11 +70,6 @@ function SearchSample() {
             <div key={artist.id}>
                 <PlaylistMusicBox img ={artist.images.length ? <img width={"60px"} height={"60px"} src={artist.images[0].url} alt=""/> 
                 : <img width={"60px"} height={"60px"} src={black} alt=""/>}  title="제목" name = {artist.name} album = {artist.genres[0]} time = "3:00"/>
-
-                {/* {artist.images.length ? <img width={"50px"} height={"50px"} src={artist.images[0].url} alt=""/> 
-                : <img width={"50px"} height={"50px"} src={black} alt=""/>}
-                {artist.name} <br/>
-                {artist.genres[0]} <br/> 여러 장르일 때, 맨 처음 장르만 표시 */}
             </div>
         ))
     }
@@ -74,9 +77,8 @@ function SearchSample() {
 
     return (
         <div className="searchSample-wrap">
-            <Header/>
             <header className="searchSample-header">
-            <h1>Spotify React</h1>
+            {/*<h3>Spotify React</h3>*/}
                 {!token ?
                     <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login
                         to Spotify</a>
@@ -84,13 +86,16 @@ function SearchSample() {
 
                 {token ? 
                 <form onSubmit={searchArtists}>
-                    <input type="text" onChange={e => setSearchKey(e.target.value)}/>
-                    <button type={"submit"}>Search</button>
+                    <input type="text" onChange={e => setSearchKey(e.target.value)} placeholder='검색어를 입력하세요'/>
+                    <button type={"submit"}>
+                            <FontAwesomeIcon icon={faSearch} id="searchIcon"/>
+                    </button>
                 </form>
                 : <h2>Please Login</h2>
                 }
     
-                {renderArtists()}
+                {/*renderArtists()*/}
+                {/*<Result renderArtists = {renderArtists()}/>*/}
             </header>
         </div>
 

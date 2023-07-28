@@ -8,6 +8,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import '../css/header.css'
 import Logo from "../images/logo2.png" // 이미지 삽입을 위한 import
+import SearchSample from "./searchSample";
 
 function Header(){
 
@@ -32,10 +33,11 @@ function Header(){
                 </button>
             </div>
             <div id='search-area' className='box'>
-                <Link to="/searchSample"> 
+                <SearchSample/>
+                {/* <Link to="/searchSample"> 
                     <FontAwesomeIcon icon={faSearch} id="searchIcon"/>
                 </Link>
-                <input id='searchInput' placeholder="검색어를 입력하세요."/>
+                <input id='searchInput' placeholder="검색어를 입력하세요."/> */}
             </div>
             <div id="user-area" className='box'>
                 <FontAwesomeIcon icon={faUser} id="userIcon"/>
