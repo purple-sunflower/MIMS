@@ -6,20 +6,21 @@
 #myMusic-wrap{
     width: 100%;
     height: 1600px;
-    background-color: orange;
+    background-color: ivory;
 }
 
 #myMusic-wrap>#user-area{
     margin: 0 auto;
     width: 1000px;
     height: 170px;
-    background-color: darkblue;
+    /*background-color: darkblue;*/
+    border: 2px solid lightgray;
 }
 
 #myMusic-wrap>#user-area>#user-left{
     width: 170px;
     height: 170px;
-    background-color: aqua;
+    /*background-color: aqua;*/
     padding-top: 10px;
     box-sizing: border-box;
     float: left;
@@ -31,7 +32,7 @@
     margin: 0 auto;
 
     border-radius: 100%;
-    background-color: pink;
+    /*background-color: pink;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +48,7 @@
     margin: 0;
     width: 830px;
     height: 100%;
-    background-color: yellowgreen;
+    /*background-color: yellowgreen;*/
     float: left;
 
     display: flex;
@@ -57,7 +58,7 @@
 #myMusic-wrap>#user-area>#user-right>#user-name{
     width: auto;
     height: auto;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     font-size: 25px;
     margin: 20px;
 }
@@ -66,13 +67,16 @@
     margin: 50px auto;
     width: 1000px;
     height: 400px;
-    background-color: violet;
+    /*background-color: violet;*/
+    border: 2px solid lightgray;
 }
 
 #myMusic-wrap>.myMusicBox>.myMusicTitle{
     font-size: 25px;
-    background-color: purple;
+    /*background-color: purple;*/
     padding: 10px 0;
     box-sizing: border-box;
+
+    border-bottom: 1px solid lightgray;
 }
 

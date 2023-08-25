@@ -6,11 +6,13 @@
 #recMusicBox-wrap{
     width: 170px;
     height: 210px;
-    background-color: green;
+    /*background-color: green;*/
     float: left;
 
     margin-right: 55px; /*간격 조정*/
     margin-bottom: 20px;
+    
+    border: 1px solid gray;
 }
 
 #recMusicBox-wrap>#top:hover{
@@ -20,7 +22,7 @@
 #recMusicBox-wrap>#top{
     width: 100%;
     height: 170px;
-    background-color: darkgray;
+    /*background-color: darkgray;*/
     position: relative;
 }
 
@@ -38,15 +40,15 @@
 #recMusicBox-wrap>#bottom{
     width: 100%;
     height: 40px;
-    background-color: magenta;
+    /*background-color: magenta;*/
 }
 
 #recMusicBox-wrap>#bottom>span{
     display: block;
     width: 100%;
     height: 20px;
-    border-bottom: 1px solid black;
-    background-color: aqua;
+    /*border-bottom: 1px solid black;*/
+    /*background-color: aqua;*/
 }
 
 #recMusicBox-wrap>#bottom>span:nth-child(2) {

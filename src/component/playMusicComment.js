@@ -6,7 +6,7 @@ function PlayMusicComment() {
   return (
     <div className="PlayMusicCommentArea">
         <div id="commentRead">
-          전체 코멘트 볼 수 있즘.
+          {/*전체 코멘트 볼 수 있즘.*/}
           <CommentBox nickname ="카리나는 신" comment="유지민 사랑해"/>
           <CommentBox nickname ="마크완댜님" comment="타 팬인데 에스파 노래 반박불가.. 넘 좋음"/>
           <CommentBox nickname ="지제리" comment="랩 쫀득한거 보소"/>

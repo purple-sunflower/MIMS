@@ -1,7 +1,7 @@
 .playMusicPlaylistArea{
     width: 445px;
     height: 560px;
-    background-color: lightcoral;
+    /*background-color: lightcoral;*/
     padding-bottom: 50px;
     box-sizing: border-box; 
     /* 230719 padding으로 여백 만듦 > 임시방편의 느낌 */

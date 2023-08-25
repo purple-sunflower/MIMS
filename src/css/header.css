@@ -9,10 +9,11 @@
 #header-wrap{
     width: 100%;
     height: 60px;
-    background-color: pink;
+    /*background-color: pink;*/
     margin-bottom: 30px;
     /* position: fixed; 헤더 고정 */
     /*헤더 고정은 나중에 반응형에서 주기*/
+    border-bottom: 1px solid gray; /*나중에 요 부분 지우기 230825*/
 }
 
 #header-wrap>.box{
@@ -22,7 +23,7 @@
 #header-wrap>#logo-box{
     width: 165px;
     height: 60px;
-    background-color: magenta;
+    /*background-color: magenta;*/
 
     display: flex;
     align-items: center;
@@ -40,7 +41,7 @@
     padding-left: 50px;
     box-sizing: border-box;
 
-    background-color: blue;
+    /*background-color: blue;*/
 }
 
 #header-wrap>#btn-group>.btn {
@@ -52,7 +53,7 @@
     margin-right: 50px;
     padding: 0 20px;
     box-sizing: border-box;
-    background-color: yellow;
+    /*background-color: yellow;*/
 }
 
 #header-wrap>#search-area{
@@ -60,7 +61,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: aqua;
+    /*background-color: aqua;*/
 }
 
 #header-wrap>#search-area>#searchIcon{

@@ -2,14 +2,15 @@
 .commentBoxArea{
     width: 400px;
     height: 60px;
-    background-color: gold;
+    /*background-color: gold;*/
     margin-bottom: 10px;
+    border: 1px solid gray;
 }
 
 .commentBoxArea>#com-left {
     width: 60px;
     height: 60px;
-    background-color: tomato;
+    /*background-color: tomato;*/
     float: left;
 
     display: flex;
@@ -26,7 +27,7 @@
 .commentBoxArea>#com-right{
     width: 330px;
     height: 50px;
-    background-color: turquoise;
+    /*background-color: turquoise;*/
 }
 
 .commentBoxArea>#com-right>span{
@@ -35,10 +36,10 @@
     height: 30px;
     padding-top: 5px;
     box-sizing: border-box;
-    background-color: olivedrab;
+    /*background-color: olivedrab;*/
 }
 
 .commentBoxArea>#com-right>#com-contents{
-    background-color: lightslategray;
+    /*background-color: lightslategray;*/
     font-weight: 300;
 }
