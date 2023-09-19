@@ -1,8 +1,18 @@
 // 재생 화면 > 댓글 부분
+import { useState } from "react";
 import "../css/playMusicComment.css"
 import CommentBox from "./commentBox";
 
 function PlayMusicComment() {
+
+  const [comment, setComment] = useState('');
+
+  const onChangeComment = (e) =>{
+    const currentComment = e.target.value;
+    setComment(currentComment);
+    console.log(comment);
+  }
+
   return (
     <div className="PlayMusicCommentArea">
         <div id="commentRead">
@@ -19,7 +29,7 @@ function PlayMusicComment() {
           <CommentBox nickname ="암어귄카" comment="에스파 신곡 나왔다면서요?"/>
         </div>
         <div id="commentInput">
-          <input placeholder="당신의 생각을 적어보세요:)"/>
+          <input placeholder="당신의 생각을 적어보세요:)" onChange={onChangeComment}/>
           <button type="submit">작성</button>
         </div>
     </div>

@@ -5,11 +5,11 @@ import "../css/searchSample.css"
 import black from "../images/blackImg.png"
 import PlaylistMusicBox from './playlistMusicBox';
 import Header from './header';
-import Result from './result';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
+
 
 // 스포티파이를 통해 로그인 시, redirect_uri로 연결!
 
@@ -18,11 +18,14 @@ import { Link } from 'react-router-dom';
 // 애초에 로그인 상태였을 때도 401 에러 뜸..
 // 230728 엥 된다... 원래 원버전에서 로그인 하고 나서 하니까 되넹... > 왜 또 안됨? => 됐다 안됐다 함!!!!!!!!!
 
+// 230919 검색버튼 만들어서 검색 결과를 따로보는 창 만듦..
+
 function SearchSample() {
     const CLIENT_ID = "3a5c7bcf08c24a9cad7adbcbf594d6ba"
     const REDIRECT_URI = "http://localhost:3000"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
+    const [searchList, setSearchList] = useState([]);
 
     const [token, setToken] = useState("")
 
@@ -76,31 +79,37 @@ function SearchSample() {
 
 
     return (
-        <div className="searchSample-wrap">
-            <header className="searchSample-header">
-            {/*<h3>Spotify React</h3>*/}
-                {!token ?
-                    <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login
-                        to Spotify</a>
-                    : <button onClick={logout}>Logout</button>}
-
-                {token ? 
-                <form onSubmit={searchArtists}>
-                    <input type="text" onChange={e => setSearchKey(e.target.value)} placeholder='검색어를 입력하세요'/>
-                    <button type={"submit"}>
+        <div className='searchSample-wrap'>
+            <Header/>
+            <div id="search-area">
+                <div id='login-state'>
+                    {!token ?
+                        <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login
+                            to Spotify</a>
+                        : <button onClick={logout}>Logout</button>}
+                </div>
+                <div id='search-input'>
+                    {token ? 
+                    <form onSubmit={searchArtists} id='search-form'>
+                        <input type="text" onChange={e => setSearchKey(e.target.value)} placeholder='검색어를 입력하세요'/>
+                        <button type={"submit"}>
                             <FontAwesomeIcon icon={faSearch} id="searchIcon"/>
-                    </button>
-                </form>
-                : <h2>Please Login</h2>
-                }
+                        </button>
+                    </form>
+                    : <h2>Please Login</h2>
+                    }
+                </div>
     
-                {/*renderArtists()*/}
-                {/*<Result renderArtists = {renderArtists()}/>*/}
-            </header>
+            </div>
+            <div id='result'>
+                {renderArtists()}
+            </div>
+        
+
         </div>
 
         
-        
+
     );
 }
 

@@ -36,7 +36,7 @@
 }
 
 #header-wrap>#btn-group{
-    width: 500px;
+    width: 600px;
     height: 100%;
     padding-left: 50px;
     box-sizing: border-box;
@@ -56,12 +56,11 @@
     /*background-color: yellow;*/
 }
 
-#header-wrap>#search-area{
+/* #header-wrap>#search-area{
     width: 500px;
     height: 100%;
     display: flex;
     align-items: center;
-    /*background-color: aqua;*/
 }
 
 #header-wrap>#search-area>#searchIcon{
@@ -74,7 +73,7 @@
     width: 400px;
     height: 25px;
     font-size: 15px;
-}
+} */
 
 #header-wrap>#user-area{
     width: 50px;

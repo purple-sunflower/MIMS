@@ -1,11 +1,16 @@
 // 검색 결과는 여기에 표시되도록 ! 임시임 ㅠㅠ
-import Header from "./header";
 
-function Result(props) {
+import Header from "./header";
+import "../css/result.css"
+
+function Result() {
+
   return (
     <div className="result">
       <Header/>
-      {props.renderArtists}
+      <div id="result-area">
+        
+      </div>
     </div>
   );
 }

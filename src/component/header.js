@@ -31,13 +31,9 @@ function Header(){
                 <button className='btn' id='all' onClick={clickBtn}>
                     <Link to="/allMusic">전체보기</Link>
                 </button>
-            </div>
-            <div id='search-area' className='box'>
-                <SearchSample/>
-                {/* <Link to="/searchSample"> 
-                    <FontAwesomeIcon icon={faSearch} id="searchIcon"/>
-                </Link>
-                <input id='searchInput' placeholder="검색어를 입력하세요."/> */}
+                <button id='search' className='btn' onClick={clickBtn}>
+                <Link to="/searchSample">검색</Link>
+                </button>
             </div>
             <div id="user-area" className='box'>
                 <FontAwesomeIcon icon={faUser} id="userIcon"/>
