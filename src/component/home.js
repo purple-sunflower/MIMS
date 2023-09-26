@@ -5,6 +5,7 @@ import Header from "./header"
 import PlayBar from "./playBar";
 import RecMusicList from "./recMusicList";
 import SearchSample from "./searchSample";
+import SpotifyGetPlaylist from "./spotifyGetPlaylist";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <RecMusicList/>
       <RecMusicList/>
       <PlayBar/>
+      <SpotifyGetPlaylist/>
     </div>
   );
 }

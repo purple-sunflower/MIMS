@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 
+import Pagination from './searchPagination';
 
 // 스포티파이를 통해 로그인 시, redirect_uri로 연결!
 
@@ -19,6 +20,7 @@ import { Link } from 'react-router-dom';
 // 230728 엥 된다... 원래 원버전에서 로그인 하고 나서 하니까 되넹... > 왜 또 안됨? => 됐다 안됐다 함!!!!!!!!!
 
 // 230919 검색버튼 만들어서 검색 결과를 따로보는 창 만듦..
+// 230926 8개씩 잘라서 pagination
 
 function SearchSample() {
     const CLIENT_ID = "3a5c7bcf08c24a9cad7adbcbf594d6ba"
@@ -77,6 +79,16 @@ function SearchSample() {
         ))
     }
 
+    // 230926 pagination 부분
+    const [searchPerPage, setSearchPerPage] = useState(8)
+    const [currentPage, setCurrentPage] = useState(1)
+
+    const currentSearchList=(searchList)=>{
+        const startIndex = (currentPage-1)*searchPerPage
+        const lastIndex = startIndex+searchPerPage
+        const slicedList = searchList.slice(startIndex, lastIndex)
+        return slicedList
+    }
 
     return (
         <div className='searchSample-wrap'>
@@ -102,7 +114,8 @@ function SearchSample() {
     
             </div>
             <div id='result'>
-                {renderArtists()}
+                {currentSearchList(renderArtists())}
+                <Pagination searchPerPage={searchPerPage} total={renderArtists().length} setCurrentPage={setCurrentPage}/>
             </div>
         
 
