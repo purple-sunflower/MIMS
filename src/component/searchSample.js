@@ -115,7 +115,7 @@ function SearchSample() {
             </div>
             <div id='result'>
                 {currentSearchList(renderArtists())}
-                <Pagination searchPerPage={searchPerPage} total={renderArtists().length} setCurrentPage={setCurrentPage}/>
+                <Pagination currentPage={currentPage} searchPerPage={searchPerPage} total={renderArtists().length} setCurrentPage={setCurrentPage}/>
             </div>
         
 

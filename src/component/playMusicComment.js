@@ -27,6 +27,7 @@ function PlayMusicComment() {
           <CommentBox nickname ="아임닝닝스팬" comment="닝닝이 목소리 존예"/>
           <CommentBox nickname ="블랙맘바" comment="내가 낄 곳이 없네"/>
           <CommentBox nickname ="암어귄카" comment="에스파 신곡 나왔다면서요?"/>
+          {/* 231003 글 쓰고 "작성"버튼 눌렀을 때, commentBox 추가되도록 */}
         </div>
         <div id="commentInput">
           <input placeholder="당신의 생각을 적어보세요:)" onChange={onChangeComment}/>
