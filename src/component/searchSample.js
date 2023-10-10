@@ -80,7 +80,7 @@ function SearchSample() {
     }
 
     // 230926 pagination 부분
-    const [searchPerPage, setSearchPerPage] = useState(8)
+    const [searchPerPage, setSearchPerPage] = useState(6)
     const [currentPage, setCurrentPage] = useState(1)
 
     const currentSearchList=(searchList)=>{

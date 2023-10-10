@@ -15,7 +15,7 @@ function Home() {
       <RecMusicList/>
       <RecMusicList/>
       <PlayBar/>
-      <SpotifyGetPlaylist/>
+      {/* <SpotifyGetPlaylist/> */}
     </div>
   );
 }

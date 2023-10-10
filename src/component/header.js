@@ -8,7 +8,6 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import '../css/header.css'
 import Logo from "../images/logo3.png" // 이미지 삽입을 위한 import
-import SearchSample from "./searchSample";
 
 function Header(){
 
@@ -31,8 +30,9 @@ function Header(){
                 <button className='btn' id='all' onClick={clickBtn}>
                     <Link to="/allMusic">전체보기</Link>
                 </button>
-                <button id='search' className='btn' onClick={clickBtn}>
-                <Link to="/searchSample">검색</Link>
+                <button className='btn' id='search' onClick={clickBtn}>
+                {/* <Link to="/searchSample">검색</Link> */}
+                    <Link to="/searchAlbum">검색</Link> {/*앨범 검색*/}
                 </button>
             </div>
             <div id="user-area" className='box'>

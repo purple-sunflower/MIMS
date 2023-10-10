@@ -11,6 +11,7 @@ import ScrollToTop from "./component/scrollToTop";
 import SearchMusic from './component/searchMusic';
 import SearchSample from "./component/searchSample";
 import Result from "./component/result"
+import SearchAlbum from "./component/searchAlbum"
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/searchMusic' element={<SearchMusic/>}/>
         <Route path='/searchSample' element={<SearchSample/>}/>
         <Route path='/result' element={<Result/>}/>
+        <Route path='/searchAlbum' element={<SearchAlbum/>}/>
       </Routes>
     </BrowserRouter>
   );
