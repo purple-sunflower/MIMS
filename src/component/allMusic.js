@@ -92,6 +92,8 @@ function AllMusic(){
                 // //This is the url that gets the results out of the Spotify API. You have to put in the variables you created above.
                 // $url = "https://api.spotify.com/v1/search?query=$getRandomSongs&offset=$getRandomOffset&limit=1&type=track&market=NL"
 
+                // 231015 IDEA: 검색 기능에 특정 키워드 넣어서 모든 음악 나오도록...?
+
     return(
         <div id='allMusic-wrap'>
          <Header/>

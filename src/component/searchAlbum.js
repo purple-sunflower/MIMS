@@ -1,4 +1,5 @@
 // 231005 spotify 검색 실습 (가수 이름 검색 시, 앨범 나오도록)
+// bootstrap 사용
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, InputGroup, FormControl, Button, Row, Card, Pagination} from 'react-bootstrap';
