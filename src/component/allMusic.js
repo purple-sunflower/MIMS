@@ -44,7 +44,7 @@ function AllMusic(){
 
         useEffect(() => {
         fetch(
-        `https://api.spotify.com/v1/me/playlists`,
+        `https://api.spotify.com/v1/tracks/9`,
         {
                 headers: {
                 Authorization: `Bearer ${accessToken}`,
@@ -54,7 +54,6 @@ function AllMusic(){
         .then((response) => response.json())
         .then((data) => setSongData(data.playlists));
         }, []);
-
 
         // 무작위 검색어 얻기
         function getRandomSearch() {
@@ -98,56 +97,7 @@ function AllMusic(){
         <div id='allMusic-wrap'>
          <Header/>
          <div id='musicList'>
-            {/* <RecMusicBox imgSrc = {<img className='img' src={Kistch}/>} // 되긴 하지만... 더 좋은 방법은?
-                    title="Kitsch" 
-                    name="IVE" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={Spicy}/>} 
-                    title="Spicy" 
-                    name="AESPA" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={HelloFuture}/>} 
-                    title="Hello Future" 
-                    name="NCT DREAM" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={HypeBoy}/>} 
-                    title="Hype boy" 
-                    name="New Jeans" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={Kistch}/>} // 되긴 하지만... 더 좋은 방법은?
-                    title="Kitsch" 
-                    name="IVE" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={Spicy}/>} 
-                    title="Spicy" 
-                    name="AESPA" 
-                    genre="K-POP"/> 
-            <RecMusicBox imgSrc = {<img className='img' src={Kistch}/>} // 되긴 하지만... 더 좋은 방법은?
-                    title="Kitsch" 
-                    name="IVE" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={Spicy}/>} 
-                    title="Spicy" 
-                    name="AESPA" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={HelloFuture}/>} 
-                    title="Hello Future" 
-                    name="NCT DREAM" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={HypeBoy}/>} 
-                    title="Hype boy" 
-                    name="New Jeans" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={Kistch}/>} // 되긴 하지만... 더 좋은 방법은?
-                    title="Kitsch" 
-                    name="IVE" 
-                    genre="K-POP"/>
-            <RecMusicBox imgSrc = {<img className='img' src={Spicy}/>} 
-                    title="Spicy" 
-                    name="AESPA" 
-                    genre="K-POP"/>  */}
-                    {/* {renderArtists()} */}
-                    <div>
+                <div>
                 {songData ? (
                         <div>
                         {/* <h1>{songData.name}</h1>

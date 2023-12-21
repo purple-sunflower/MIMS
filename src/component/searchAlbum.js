@@ -141,6 +141,7 @@ function SearchAlbum() {
           231009 기존 paginatoion에서 검색 결과에 따른 pagination 버튼은 잘 만들어짐
                  검색 결과를 6개씩만 보려면 currentSearchList를 사용해야함.
                  But currentSearchList 안에 변수를 뭘 넣어야 하는지 몰겠음.
+          231221 pagination 숫자는 잘 나옴. but 검색 전체 결과가 나옴 (5개씩 나눠서 안나옴)
       */}
     </div>
   );
