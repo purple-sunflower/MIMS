@@ -4,6 +4,7 @@ import '../css/storedPlaylist.css'
 import Header from './header';
 import User from '../images/user.png'
 import PlaylistMusicBox from './playlistMusicBox';
+import { Button } from "react-bootstrap";
 
 function MyMusic() {
 
@@ -25,12 +26,12 @@ function MyMusic() {
                         재생목록 이름
                     </div>
                     <div id="btn-collection">
-                        <button className='btn' id='shuffle-btn' onClick={clickBtn}>
+                        <Button className='btn' variant="outline-dark" id='shuffle-btn' onClick={clickBtn}>
                             셔플
-                        </button>
-                        <button className='btn' id="modify-btn" onClick={clickBtn}>
+                        </Button>
+                        <Button className='btn' variant="outline-dark" id="modify-btn" onClick={clickBtn}>
                             재생목록 수정
-                        </button>
+                        </Button>
                     </div>
                 </div>
             </div>

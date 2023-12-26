@@ -41,6 +41,7 @@ function SearchAlbum() {
         'Authorization' : 'Bearer ' + accessToken
       }
     }
+    // 231226 아티스트와 트랙을 같이 검색해야 하지 않을까? > 결과도 트랙이 나오도록?!
     var artistID = await fetch('https://api.spotify.com/v1/search?q=' + searchInput + '&type=artist', searchParameters)
       .then(response => response.json())
       .then(data => {return data.artists.items[0].id});
@@ -56,18 +57,7 @@ function SearchAlbum() {
 
     // Display those albums to the user
   }
-  console.log(albums);
-
-  // pagination
-  // const [state, setState] = useState({
-  //   currnetData: albums,
-  //   limit: 6,
-  //   activePage: 1
-  // });
-
-  // const handlePageChange = (pageNumber) => {
-  //   setState((prev) => ({ ...prev, activePage: pageNumber }));
-  // };  
+  console.log(albums); 
 
  // 230926 pagination 부분
  const [searchPerPage, setSearchPerPage] = useState(5)
@@ -105,7 +95,7 @@ function SearchAlbum() {
       {/* Result */}
       <Container>
         <Row className='mx-1 row row-cols-5'>
-          {albums.map( (album) => {
+          {currentSearchList(albums).map( (album) => {
             console.log(album);
             return (
               <Card>
@@ -133,15 +123,15 @@ function SearchAlbum() {
         })}
       </Pagination> */}
       <div>
-        {/* {currentSearchList(albums)} */}
         <SearchPagination currentPage={currentPage} searchPerPage={searchPerPage} total={albums.length} setCurrentPage={setCurrentPage}/>
       </div>
       {/* 231008 bootstrap으로 pagination 해보려 하는데 잘 안됨
           기존 pagination 사용하려 함 > but albums의 mapping에서 걸림
           231009 기존 paginatoion에서 검색 결과에 따른 pagination 버튼은 잘 만들어짐
-                 검색 결과를 6개씩만 보려면 currentSearchList를 사용해야함.
+                 검색 결과를 5개씩만 보려면 currentSearchList를 사용해야함.
                  But currentSearchList 안에 변수를 뭘 넣어야 하는지 몰겠음.
           231221 pagination 숫자는 잘 나옴. but 검색 전체 결과가 나옴 (5개씩 나눠서 안나옴)
+          231226 해결!!!!!!! (albums 매핑할 때, currentSearchList(albums).map 사용!)
       */}
     </div>
   );

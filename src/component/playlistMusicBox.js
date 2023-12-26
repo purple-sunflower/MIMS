@@ -9,7 +9,8 @@ function PlaylistMusicBox(props) {
   return (
     <div className="playlistMusicBox-wrap">
       <div id="img-area">
-        {props.img}
+        {/* {props.img} */}
+        <img src={Kistch}></img>
       </div>
       <div id="left-area">
         <span>{props.title}</span>

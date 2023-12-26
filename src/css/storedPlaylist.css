@@ -58,8 +58,8 @@
 
 #storedPlaylist-wrap>#user-area>#user-right>#user-name{
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: -150px;
+    left: 150px;
 
     width: 830px;
     height: 50px;
@@ -71,8 +71,8 @@
 
 #storedPlaylist-wrap>#user-area>#user-right>#btn-collection{
     position: absolute;
-    top: 60px;
-    left: 0px;
+    top: -120px;
+    left: 150px;
 
     width: 830px;
     height: 100px;
