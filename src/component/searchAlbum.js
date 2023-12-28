@@ -41,7 +41,7 @@ function SearchAlbum() {
         'Authorization' : 'Bearer ' + accessToken
       }
     }
-    // 231226 아티스트와 트랙을 같이 검색해야 하지 않을까? > 결과도 트랙이 나오도록?!
+    // 231226 아티스트와 트랙을 같이 검색해야 하지 않을까? > 결과도 트랙이 나오도록?! > artist, track componenet 따로 나눠서,.?
     var artistID = await fetch('https://api.spotify.com/v1/search?q=' + searchInput + '&type=artist', searchParameters)
       .then(response => response.json())
       .then(data => {return data.artists.items[0].id});

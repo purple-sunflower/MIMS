@@ -7,7 +7,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 import React from 'react'
 import '../css/header.css'
-import Logo from "../images/logo3.png" // 이미지 삽입을 위한 import
+import Logo from "../images/logo3-final.png" // 이미지 삽입을 위한 import
 import { Button } from "react-bootstrap";
 
 
