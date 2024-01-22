@@ -2,6 +2,10 @@
 // 230712 12개씩 보이고 다음 창으로 넘어가는 pagination 필요
 // 231228 5개씩 보이고 random 버튼 누를 때마다 다른 노래들 나오게 기능 수정?!
 
+//240101 
+// 현 상황: random 버튼 누를 때마다, 노래가 랜덤으로 나옴 > 구현 완
+// 구현해볼까?: 랜덤으로 나온 노래를 눌렀을 때, 노래가 나오면 좋겠음
+
 import React from 'react';
 import '../css/allMusic.css'
 import Header from './header';
@@ -114,8 +118,9 @@ function AllMusic() {
       <Header/>
       {/* Check */}
       <Button onClick={getTracks}>
-        get Track
-        CORS 오류 해결
+        {/* get Track
+        CORS 오류 해결 */}
+        오늘의 노래 추천 받기!
       </Button>    
 
       {/* Result */}
@@ -146,92 +151,5 @@ function AllMusic() {
     </div>
   );
 }
-
-// function AllMusic(){
-
-//   // const [accessToken, setAccessToken] = useState("");
-//   const [songData, setSongData] = useState([]);
-
-//         // https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl
-
-//         const accessToken = "3a5c7bcf08c24a9cad7adbcbf594d6ba"; //Replace with your Access Token obtained from Spotify API
-        
-
-//         useEffect(() => {
-//         fetch(
-//         `https://api.spotify.com/v1/tracks?ids=1DYPrEzbmlOYbeTDkCDsaA, 11dFghVXANMlKmJXsNCbNl`,
-//         {
-//                 headers: {
-//                 Authorization: `Bearer ${accessToken}`,
-//                 },
-//         }
-//         )
-//         .then((response) => response.json())
-//         .then((data) => setSongData(data.tracks));
-//         }, []);
-
-//         console.log(songData);
-
-//         // 무작위 검색어 얻기
-//         function getRandomSearch() {
-//                 // A list of all characters that can be chosen.
-//                 const characters = 'abcdefghijklmnopqrstuvwxyz';
-                
-//                 // Gets a random character from the characters string.
-//                 const randomCharacter = characters.charAt(Math.floor(Math.random() * characters.length));
-//                 let randomSearch = '';
-              
-//                 // Places the wildcard character at the beginning, or both beginning and end, randomly.
-//                 switch (Math.round(Math.random())) {
-//                   case 0:
-//                     randomSearch = randomCharacter + '%';
-//                     break;
-//                   case 1:
-//                     randomSearch = '%' + randomCharacter + '%';
-//                     break;
-//                 }
-              
-//                 return randomSearch;
-//               }
-
-
-//               // 231003 무작위 데이터..?
-//               //make a variable with some search queries and put it in an array. (you can create more search queries.
-//                 // $getRandomSongsArray = array('%25a%25', 'a%25', '%25e%25', 'e%25', '%25i%25', 'i%25', '%25o%25', 'o%25');
-
-//                 // //This will get a random result out of the array above
-//                 // $getRandomSongs = $getRandomSongsArray[array_rand($getRandomSongsArray)];
-
-//                 // //This will get a random offset number between 1 and 1000. So you get a random track. (you can change the numbers btw)
-//                 // $getRandomOffset = rand(1, 1000);
-
-//                 // //This is the url that gets the results out of the Spotify API. You have to put in the variables you created above.
-//                 // $url = "https://api.spotify.com/v1/search?query=$getRandomSongs&offset=$getRandomOffset&limit=1&type=track&market=NL"
-
-//                 // 231015 IDEA: 검색 기능에 특정 키워드 넣어서 모든 음악 나오도록...?
-
-
-//     return(
-//         <div id='allMusic-wrap'>
-//          <Header/>
-         
-//          <div id='musicList'>
-//                 <div>
-//                 {songData ? (
-//                         <div>
-//                         {/* <h1>{songData.name}</h1>
-//                         <p>{songData.artists[0].name}</p>
-//                         <img src={songData.album.images[0].url} alt="Album Cover" /> */}
-//                         {getRandomSearch(songData)}
-//                         </div>
-//                 ) : (
-//                         <p>Loading...</p>
-//                 )}
-//                 </div>
-            
-//          </div>
-//         </div>
-//     );
-// }
 
 export default AllMusic;

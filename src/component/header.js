@@ -30,7 +30,7 @@ function Header(){
                     내 보관함
                 </Button>{' '}
                 <Button className='btn' variant="outline-dark" href="/allMusic" id='all' onClick={clickBtn}>
-                    전체보기
+                    노래 추천
                 </Button>{' '}
                 <Button className='btn' variant="outline-dark" href="/searchAlbum" id='search' onClick={clickBtn}>
                     검색 {/* 앨범 검색 */}
