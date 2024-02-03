@@ -12,6 +12,7 @@ import SearchMusic from './component/searchMusic';
 import SearchSample from "./component/searchSample";
 import Result from "./component/result"
 import SearchAlbum from "./component/searchAlbum"
+import PlayTrackTest from './component/playTrackTest';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/searchSample' element={<SearchSample/>}/>
         <Route path='/result' element={<Result/>}/>
         <Route path='/searchAlbum' element={<SearchAlbum/>}/>
+        <Route path='/playTrackTest' element={<PlayTrackTest/>}/>
       </Routes>
     </BrowserRouter>
   );

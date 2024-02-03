@@ -34,12 +34,12 @@ function Home() {
  
   // https://api.spotify.com/v1/search?q=genre%3Avaporwave&type=track
   // https://api.spotify.com/v1/recommendations?seed_genres=pop%2C+k-pop%2C+r%26b
-  async function getRecTrack() {
-    let recTrackData = await fetch('https://api.spotify.com/v1/recommendations?seed_genres=pop%2C')
-      .then(response => response.json())
-      .then(data => {return data.tracks.name});
-      console.log("실행완료");
-  }
+  // async function getRecTrack() {
+  //   let recTrackData = await fetch('https://api.spotify.com/v1/recommendations?seed_genres=pop%2C')
+  //     .then(response => response.json())
+  //     .then(data => {return data.tracks.name});
+  //     console.log("실행완료");
+  // }
 
   
 
@@ -51,7 +51,7 @@ function Home() {
       <RecMusicList/>
       <PlayBar/>
       {/* <SpotifyGetPlaylist/> */}
-      {getRecTrack}
+      {/* {getRecTrack} */}
     </div>
   );
 }
