@@ -17,7 +17,7 @@ function MyMusicPlaylistItem(props) {
         <img src={HelloFuture}/>
       </div>
     <div id="playlist-title">
-        <h2>{props.playlistTitle}</h2>
+        {props.playlistTitle}
     </div>
     </div>
   );

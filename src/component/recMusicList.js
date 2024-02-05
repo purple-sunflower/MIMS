@@ -41,7 +41,7 @@ function RecMusicList(){
       .then(result => result.json())
       .then(data => setAccessToken(data.access_token))
 
-      getGenreList();
+//       getGenreList();
   }, [])    
 
   // getRandomArtist
@@ -86,19 +86,20 @@ function RecMusicList(){
        
         // pop, rock, jazz
         if(getGenre != undefined) {
-                if(getGenre.includes("pop")) {
+                if(getGenre.includes("hip hop")) {
+                        console.log(getGenre + " is a hip hop");
+                } else if(getGenre.includes("rap")) {
+                        console.log(getGenre + " is a rap");
+                } else if(getGenre.includes("pop")) {
                         console.log(getGenre + " is a pop");
-                } else if(getGenre.includes("rock")) {
-                        console.log(getGenre + " is a rock");
-                } else if(getGenre.includes("jazz")) {
-                        console.log(getGenre + " is a jazz");
                 } else{
                         console.log(getGenre);
                 }
         }
 
         // 조건문으로 다 하기엔 벅참... 장르만 모여있는 거 없나... /
-        
+        // 240205 새로운 정보: 장르별로 플리를 보여줌 (트랙을 보여주는 건 없다..)
+        // 장르별 아티스트 보여주기?
 
    }
 

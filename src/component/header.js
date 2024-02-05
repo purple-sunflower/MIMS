@@ -35,9 +35,6 @@ function Header(){
                 <Button className='btn' variant="outline-dark" href="/searchAlbum" id='search' onClick={clickBtn}>
                     검색 {/* 앨범 검색 */}
                 </Button>{' '}
-                <Button className='btn' variant="outline-dark" href="/playTrackTest" id='search' onClick={clickBtn}>
-                    재생 (test) {/* 노래 재생 test */}
-                </Button>{' '}
             </div>
             <div id="user-area" className='box'>
                 <FontAwesomeIcon icon={faUser} id="userIcon"/>
